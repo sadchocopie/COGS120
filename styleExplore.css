@@ -151,6 +151,74 @@ body {
 	color: #4a4a4a;
 }
 
+#backExplore {
+	
+	position: relative;
+	top: 25%;
+	left: -35%;
+	font-family: Helvetica;
+	font-size: 36px;
+	font-weight: bold;
+
+	color: #4a4a4a;
+}
+
+#savedText {
+	width: 133px;
+	height: 43px;
+	position: absolute;
+	top: 33%;
+	left: 45%;
+	right: 40%;
+	bottom: 56%;
+	font-family: Helvetica;
+	font-size: 36px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #4a4a4a;
+}
+
+.analyze {
+	position: absolute;
+	top: 36%;
+	left: 79.75%;
+  width: 200px;
+  height: 60px;
+  border: solid 1px #979797;
+  background-color: #ffffff;
+}
+
+#analyzeText {
+	position: relative;
+	top: -45%;
+	font-family: Helvetica;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.analyzeOrange {
+	position: absolute;
+	top: 36%;
+	left: 79.75%;
+  width: 200px;
+  height: 60px;
+  border: solid 3px;
+  border-color: orange;
+  background-color: #ffffff;
+}
+
+#analyzeTextOrange {
+	position: relative;
+	top: -45%;
+	font-family: Helvetica;
+	font-size: 36px;
+	font-weight: bold;
+	color: orange;
+}
+
 .sortMenu {
 	position: relative;
 	width: 299px;
@@ -259,3 +327,4 @@ body {
 	font-weight: bold;
 	color: #4a90e2;
 }
+

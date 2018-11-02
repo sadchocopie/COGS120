@@ -10,7 +10,11 @@
 	</head>
 	<body>
 		<div class="HeaderRect">
-			<div class="Rectangle-2"></div>
+			<div class="Logo" href="./index.html">
+				<a href="./index.html">
+						<img src="./assets/imgs/logo.png" href="./index.html" id="logoPicture">
+					</a>
+			</div>
 
 			<div class="Oval"></div>
 			<img src="./assets/imgs/heart-nofill.png" class="Heart">
@@ -19,10 +23,25 @@
 		<main>
 			<p class="Find-Prompt">Find Your Item!</p>
 
-			<form>
+			<form action="./explore.html">
 				<input type="text" class="SearchBar">
 				<input class="searchButton" type="image" src="./assets/imgs/search-glass.png" alt='Submit'>
 			</form>
-		</main>
+		
+			<div class="footer1">
+				<p class="footerText" id="aboutUs"><a href="./about.html">About Us</a></p>
+				<p class="footerText" id="FAQ"><a href="./faq.html">FAQ</a></p>
+				<p class="footerText" id="contact"><a href="contact.html">Contact Us</a></p>
+			</div>
+
+			<div class="footer2">
+				<p class="footerText" id="location">Location:</p>
+				<select id="locationMenu">
+						<option value="US">United States - USD$</option>
+						<option value="MX">Mexico - MXN$</option>
+						<option value="CA">Canada - CAD$</option>
+					</select>
+			</div>
+	</main>
 	</body>
 </html>

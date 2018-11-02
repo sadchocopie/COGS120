@@ -6,15 +6,20 @@
 	    <title>Store</title>
 
 	    <base href="./">
-	    <link rel="stylesheet" type="text/css" href="./home.css">
+	    <link rel="stylesheet" type="text/css" href="./styleExplore.css">
 	</head>
 	<body>
 		<header>
 			<div class="HeaderRect">
-				<div class="Rectangle-2"></div>
+				<div class="Logo">
+					<a href="./index.html">
+						<img src="./assets/imgs/logo.png" href="./index.html" id="logoPicture">
+					</a>
+
+				</div>
 
 				<form class="search">
-					<input type="text" class="miniSearchBar">
+					<input type="text" class="miniSearchBar" placeholder="Cow brick">
 					<input class="miniSearchButton" type="image" src="./assets/imgs/search-glass.png" alt='Submit'>
 				</form>
 
@@ -35,16 +40,54 @@
 		<main>
 			<p class="Explore">Explore</p>
 
-			<div class="itemBox" id="box1">
+			<div class="itemBox" id="itemBox1">
 
+				<!-- Image square -->
+				<div class="innerBox" id="innerBox1">
+					<img src="./assets/imgs/cow-brick.jpg" class="itemPic">
+				</div>
+
+				<div class="bottomBox">
+					<img src="./assets/imgs/heart-nofill.png" class="itemHeart">
+					<p class="resultsText" id="textPrice">Price</p>
+					<p class="resultsText" id="itemPrice">$7</p>
+					<p class="resultsText" id="ratingText">Ratings</p>
+					<img class="stars" src="./assets/imgs/5stars.png">
+					<p class="storeText">Amazon</p>
+				</div>
 			</div>
 
-			<div class="itemBox" id="box2">
-			
-			</div>
+			<div class="itemBox" id="itemBox2">
 
-			<div class="itemBox" id="box3">
-				
+				<!-- Image square -->
+				<div class="innerBox">
+					<img src="./assets/imgs/cow-brick.jpg" class="itemPic">
+				</div>
+
+				<div class="bottomBox">
+					<img src="./assets/imgs/heart-nofill.png" class="itemHeart">
+					<p class="resultsText" id="textPrice">Price</p>
+					<p class="resultsText" id="itemPrice">$8</p>
+					<p class="resultsText" id="ratingText">Ratings</p>
+					<img class="stars" src="./assets/imgs/5stars.png">
+					<p class="storeText">Target</p>
+				</div>
+
+			<div class="itemBox" id="itemBox3">
+
+				<!-- Image square -->
+				<div class="innerBox">
+					<img src="./assets/imgs/cow-brick.jpg" class="itemPic">
+				</div>
+
+				<div class="bottomBox">
+					<img src="./assets/imgs/heart-nofill.png" class="itemHeart">
+					<p class="resultsText" id="textPrice">Price</p>
+					<p class="resultsText" id="itemPrice">$8.5</p>
+					<p class="resultsText" id="ratingText">Ratings</p>
+					<img class="stars" src="./assets/imgs/5stars.png">
+					<p class="storeText">Walmart</p>
+				</div>
 			</div>
 		</main>
 	</body>

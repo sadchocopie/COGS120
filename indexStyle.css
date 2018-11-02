@@ -5,14 +5,22 @@
 	background-color: #ffffff;
 }
 
-.Rectangle-2 {
-	position: relative;
-	top: 35%;
-	left: 5%;
+.Logo {
+  position: relative;
+  top: 35%;
+  left: 5%;
   width: 250px;
   height: 60px;
   border: solid 1px #979797;
   background-color: #ebebeb;
+}
+
+#logoPicture {
+  position: relative;
+  top: -8px;
+  left: 0;
+  width: 100%;
+  height: 120%;
 }
 
 .Oval {
@@ -74,4 +82,65 @@ main {
   left: -5.5%;
   width: 60px;
   height: 60px;
+}
+
+.footer1 {
+  position: absolute;
+  top: 87.4%;
+  width: 99%;
+  height: 50px;
+  border: solid 1px #b4b4b4;
+  background-color: #ffffff;
+}
+
+.footer2 {
+  position: absolute;
+  top: 93%;
+  width: 99%;
+  height: 79px;
+  border: solid 1px #b4b4b4;
+  background-color: #ffffff;
+}
+
+.footerText {
+  font-family: Helvetica;
+  font-size: 24px;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+#aboutUs {
+  position: relative;
+  top: -30%;
+  left: -25%
+}
+
+#FAQ {
+  position: relative;
+  top: -132%;
+  z-index: 1;
+}
+
+#contact {
+  position: relative;
+  top: -235%;
+  left: 25%;
+}
+
+#location {
+  position: relative;
+  left: -15%;
+}
+
+#locationMenu {
+  position: relative;
+  width: 299px;
+  height: 30px;
+  top: -52px;
+  font-family: Helvetica;
+  font-size: 24px;
+  text-align: center;
+  color: #4a4a4a ;
+  border: solid 1px #979797;
+  background-color: #ebebeb
 }

@@ -5,14 +5,22 @@
 	background-color: #ffffff;
 }
 
-.Rectangle-2 {
+.Logo {
 	position: relative;
 	top: 35%;
 	left: 5%;
-  	width: 250px;
-  	height: 60px;
-  	border: solid 1px #979797;
-  	background-color: #ebebeb;
+ 	width: 250px;
+ 	height: 60px;
+ 	border: solid 1px #979797;
+ 	background-color: #ebebeb;
+}
+
+#logoPicture {
+  position: relative;
+  top: -8px;
+  left: 0;
+  width: 100%;
+  height: 120%;
 }
 
 .Oval {
@@ -159,27 +167,95 @@ body {
 
 .itemBox {
 	width: 360px;
-	height: 360px;
+	height: 540px;
 	border: solid 1px #979797;
 	background-color: #ffffff;
 }
 
-#box1 {
+#itemBox1 {
 	position: relative;
-	left: 0%;
-	background-color: black;
+	left: 5.8%;
 }
 
-#box2 {
-	position: relative;
-	top:-360px;
-	left: 33%;
-	background-color: yellow;
-}
-
-#box3 {
+#itemBox2 {
 	position: absolute;
-	top:360px;
-	left: 66%;
-	background-color: green;
+	top: 360px;
+	left: 37.6%;
+}
+
+#itemBox3 {
+	position: relative;
+	top: -485px;
+	left: 133%;
+}
+
+.innerBox {
+	position: relative;
+	top: 5%;
+	left: 8%;
+  	width: 300px;
+  	height: 300px;
+  	border: solid 1px #979797;
+  	background-color: #ffffff;
+}
+
+.bottomBox {
+	position: relative;
+	top: 57px;
+	left: -1px;
+  	width: 360px;
+  	height: 180px;
+  	border: solid 1px #979797;
+  	background-color: #ffffff;
+}
+
+.itemPic {
+	width: 100%;
+}
+
+.itemHeart {
+	position: relative;
+	top: 15px;
+	left: 40%;
+	width: 9%;
+}
+
+.resultsText {
+	position: relative;
+  	font-family: Helvetica;
+  	font-size: 24px;
+  	font-weight: bold;
+  	color: #4a4a4a;
+}
+
+
+#textPrice {
+  left: -33%;
+}
+
+#itemPrice {
+	top: -30%;
+	left: 40%;
+}
+
+#ratingText {
+	top: -35%;
+	left: -29.5%;
+}
+
+.stars {
+	position: relative;
+	top: -115px;
+	left: 19%;
+	width: 50%;
+}
+
+.storeText {
+	position: relative;
+	top: -83%;
+	left: -23%;
+	font-family: Helvetica;
+	font-size: 36px;
+	font-weight: bold;
+	color: #4a90e2;
 }

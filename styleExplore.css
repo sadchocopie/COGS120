@@ -219,6 +219,19 @@ body {
 	color: orange;
 }
 
+.rateBox {
+	position: relative;
+	top: 15%;
+  width: 360px;
+  height: 160px;
+  border: solid 1px #979797;
+  background-color: #ffffff;
+}
+
+.aPriceImg {
+	width: 100%;
+}
+
 .sortMenu {
 	position: relative;
 	width: 299px;
@@ -254,6 +267,12 @@ body {
 #itemBox3 {
 	position: relative;
 	top: -485px;
+	left: 133%;
+}
+
+#itemBox3spec {
+	position: relative;
+	top: -647px;
 	left: 133%;
 }
 
@@ -327,4 +346,3 @@ body {
 	font-weight: bold;
 	color: #4a90e2;
 }
-

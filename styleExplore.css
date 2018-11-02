@@ -151,6 +151,39 @@ body {
 	color: #4a4a4a;
 }
 
+.Explore {
+	width: 133px;
+	height: 43px;
+	position: relative;
+	top: 25%;
+	left: 45%;
+	right: 40%;
+	bottom: 56%;
+	font-family: Helvetica;
+	font-size: 36px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #4a4a4a;
+}
+
+.ExploreOrange {
+	width: 133px;
+	height: 43px;
+	position: relative;
+	left: 15%;
+	font-family: Helvetica;
+	font-size: 36px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: orange;
+}
+
 #backExplore {
 	
 	position: relative;
@@ -226,6 +259,11 @@ body {
   height: 160px;
   border: solid 1px #979797;
   background-color: #ffffff;
+}
+
+#rate3 {
+	border: solid 3px orange;
+	border-color: orange;
 }
 
 .aPriceImg {

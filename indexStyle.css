@@ -107,24 +107,25 @@ main {
   font-size: 24px;
   font-weight: bold;
   color: #4a4a4a;
-}
-
-#aboutUs {
-  position: relative;
-  top: -30%;
-  left: -25%
-}
-
-#FAQ {
-  position: relative;
-  top: -132%;
   z-index: 1;
 }
 
+#aboutUs {
+  position: absolute;
+  top: 85%;
+  left: 20%;
+}
+
+#FAQ {
+  position: absolute;
+  top: 85%;
+  left: 45%;
+}
+
 #contact {
-  position: relative;
-  top: -235%;
-  left: 25%;
+  position: absolute;
+  top: 85%;
+  left: 70%;
 }
 
 #location {

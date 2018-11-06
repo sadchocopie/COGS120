@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <title>Store</title>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Store</title>
 
-	    <base href="./">
-	    <link rel="stylesheet" type="text/css" href="./styleExplore.css">
-	</head>
+        <base href="./">
+        <link rel="stylesheet" type="text/css" href="./styleExplore.css">
+    </head>
 
-	<body>
-		<header>
-			<div class="HeaderRect">
-				<div class="Logo">
-					<a href="./index.html">
-						<img src="./assets/imgs/logo.png" href="./index.html" id="logoPicture">
-					</a>
+    <body>
+        <header>
+            <nav class="navigator">
 
-				</div>
+                <a href="./index.html">
+                    <img src="./assets/imgs/logo.png" href="./index.html" id="logoPicture">
+                </a>
 
-				<form class="search">
-					<input type="text" class="miniSearchBar">
-					<input class="miniSearchButton" type="image" src="./assets/imgs/search-glass.png" alt='Submit'>
-				</form>
+                <form class="search">
+                    <input type="text" class="miniSearchBar">
+                    <input class="miniSearchButton" type="image" src="./assets/imgs/search-glass.png" alt='Submit'>
+                </form>
 
-				<div class="Oval"></div>
-				<img src="./assets/imgs/heart-nofill.png" class="Heart">
-			</div>
-		</header>
-		<main>
-			<p class="Explore">About Us</p>
-		</main>
-	</body>
+                <!--because of how oval isnt an img its is misalgined-->
+                <a href="./account.html"><img src="./assets/imgs/heart-nofill.png" id="accountIcon"></a>
+                <a href="./saved.html"><img src="./assets/imgs/heart-nofill.png" id="heart"></a>
+            </nav>
+        </header>
+        <main>
+            <p class="Explore">About Us</p>
+        </main>
+    </body>
 </html>

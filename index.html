@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <title>Store</title>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Store</title>
 
-	    <base href="./">
-	    <link rel="stylesheet" type="text/css" href="./indexStyle.css">
-	</head>
-	<body>
-		<nav>
-			<div class="Logo" href="./index.html">
-				<a href="./index.html">
-						<img src="./assets/imgs/logo.png" href="./index.html" id="logoPicture">
-					</a>
-			</div>
+        <base href="./">
+        <link rel="stylesheet" type="text/css" href="./indexStyle.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navigator">
 
-			<a href="./account.html"><div class="Oval"></div></a>
-			<a href="./saved.html"><img src="./assets/imgs/heart-nofill.png" class="Heart"></a>
-		</nav>
+                <a href="./index.html">
+                    <img src="./assets/imgs/logo.png" href="./index.html" id="logoPicture">
+                </a>
 
-		<main>
-			<p class="Find-Prompt">Find Your Item!</p>
+                <a href="./account.html"><div id="accountIcon"></div></a>
+                <a href="./saved.html"><img src="./assets/imgs/heart-nofill.png" id="heart"></a>
 
-			<form action="./explore.html">
-				<input type="text" class="SearchBar">
-				<input class="searchButton" type="image" src="./assets/imgs/search-glass.png" alt='Submit'>
-			</form>
-		
-			<p class="footerText" id="aboutUs"><a href="./about.html">About Us</a></p>
-			<p class="footerText" id="FAQ"><a href="./faq.html">FAQ</a></p>
-			<p class="footerText" id="contact"><a href="contact.html">Contact Us</a></p>
-			<div class="footer2">
-				<p class="footerText" id="location">Location:</p>
-				<select id="locationMenu">
-						<option value="US">United States - USD$</option>
-						<option value="MX">Mexico - MXN$</option>
-						<option value="CA">Canada - CAD$</option>
-					</select>
-			</div>
-	</main>
-	</body>
+            </nav>
+        </header>
+
+        <main>
+            <p class="Find-Prompt">Find Your Item!</p>
+
+            <form action="./explore.html">
+                <input type="text" class="SearchBar">
+                <input class="searchButton" type="image" src="./assets/imgs/search-glass.png" alt='Submit'>
+            </form>
+
+            <p class="footerText" id="aboutUs"><a href="./about.html">About Us</a></p>
+            <p class="footerText" id="FAQ"><a href="./faq.html">FAQ</a></p>
+            <p class="footerText" id="contact"><a href="contact.html">Contact Us</a></p>
+            <div class="footer2">
+                <p class="footerText" id="location">Location:</p>
+                <select id="locationMenu">
+                    <option value="US">United States - USD$</option>
+                    <option value="MX">Mexico - MXN$</option>
+                    <option value="CA">Canada - CAD$</option>
+                </select>
+            </div>
+        </main>
+    </body>
 </html>

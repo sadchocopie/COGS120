@@ -1,148 +1,143 @@
 nav {
-  width: 100%;
-  height: 180px;
-  border: solid 1px #b4b4b4;
-	background-color: #ffffff;
-}
-
-.Logo {
-  position: relative;
-  top: 35%;
-  left: 5%;
-  width: 250px;
-  height: 60px;
-  border: solid 1px #979797;
-  background-color: #ebebeb;
+    width: 100%;
+    height: 100px;
+    border: solid 1px #b4b4b4;
+    background-color: #ffffff;
 }
 
 #logoPicture {
-  position: relative;
-  top: -8px;
-  left: 0;
-  width: 100%;
-  height: 120%;
+    position: absolute;
+    display: inline-flex;
+    top: 5%;
+    left: 5%;
+    width: 250px;
+    height: 60px;
+    border: solid 1px #979797;
+    background-color: #ebebeb;
 }
 
-.Oval {
-	position: relative;
-	display: inline-block;
-	top: -65px;
-	left: 83%;
-  	width: 60px;
-  	height: 60px;
-  	border-radius: 50%;
-  	border: solid 1px #979797;
-  	background-color: #d8d8d8;
-    top: 35%;
+/*lol accountICon isnt there yet*/
+#accountIcon {
+    position: absolute;
+    display: inline-flex;
+    top: 5%;
+    left: 80%;
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    border: solid 1px #979797;
+    background-color: #d8d8d8;
+}
+
+#heart {
+    position: absolute;
+    display: inline-flex;
+    top: 5%;
+    left: 90%;
+    width:60px;
+    height: 60px;
 }
 
 input, select, textarea {
-  font-size: 35px;
+    font-size: 35px;
 }
 
-.Heart {
-	position: relative;
-	display: inline-block;
-	top: 35%;
-	left: 86%;
-  width:60px;
-  height: 60px;
-}
+
 
 .Find-Prompt {
-  position: relative;
-  top: 25%;
-  left: 40%;
-  right: 40%;
-  bottom: 56%;
-  width: 311px;
-  height: 154px;
-  font-family: Helvetica;
-  font-size: 64px;
-  font-weight: bold;
-  text-align: center;
-  color: #4a4a4a;
+    position: relative;
+    top: 25%;
+    left: 40%;
+    right: 40%;
+    bottom: 56%;
+    width: 311px;
+    height: 154px;
+    font-family: Helvetica;
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+    color: #4a4a4a;
 }
 
 main {
-  text-align: center;
+    text-align: center;
 }
 
 .SearchBar {
-  width: 50%;
-  height: 80px;
-  border: solid 1px #979797;
-  background-color: #ebebeb;
-  text-align: center;
+    width: 50%;
+    height: 80px;
+    border: solid 1px #979797;
+    background-color: #ebebeb;
+    text-align: center;
 }
 
 .searchButton {
-  position: relative;
-  bottom: -20px;
-  left: -5.5%;
-  width: 60px;
-  height: 60px;
+    position: relative;
+    bottom: -20px;
+    left: -5.5%;
+    width: 60px;
+    height: 60px;
 }
 
 .footer1 {
-  position: absolute;
-  top: 87.4%;
-  width: 99%;
-  height: 50px;
-  border: solid 1px #b4b4b4;
-  background-color: #ffffff;
+    position: absolute;
+    top: 87.4%;
+    width: 99%;
+    height: 50px;
+    border: solid 1px #b4b4b4;
+    background-color: #ffffff;
 }
 
 .footer2 {
-  position: absolute;
-  top: 93%;
-  width: 99%;
-  height: 79px;
-  border: solid 1px #b4b4b4;
-  background-color: #ffffff;
+    position: absolute;
+    top: 93%;
+    width: 99%;
+    height: 79px;
+    border: solid 1px #b4b4b4;
+    background-color: #ffffff;
 }
 
 .footerText {
-  font-family: Helvetica;
-  font-size: 24px;
-  font-weight: bold;
-  color: #4a4a4a;
-  z-index: 1;
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a4a4a;
+    z-index: 1;
 }
 
 #aboutUs {
-  position: absolute;
-  top: 85%;
-  left: 20%;
+    position: absolute;
+    top: 85%;
+    left: 20%;
 }
 
 #FAQ {
-  position: absolute;
-  top: 85%;
-  left: 45%;
+    position: absolute;
+    top: 85%;
+    left: 45%;
 }
 
 #contact {
-  position: absolute;
-  top: 85%;
-  left: 70%;
+    position: absolute;
+    top: 85%;
+    left: 70%;
 }
 
 #location {
-  position: relative;
-  left: -15%;
+    position: relative;
+    left: -15%;
 }
 
 #locationMenu {
-  position: relative;
-  width: 299px;
-  height: 30px;
-  top: -52px;
-  font-family: Helvetica;
-  font-size: 24px;
-  text-align: center;
-  color: #4a4a4a ;
-  border: solid 1px #979797;
-  background-color: #ebebeb;
+    position: relative;
+    width: 299px;
+    height: 30px;
+    top: -52px;
+    font-family: Helvetica;
+    font-size: 24px;
+    text-align: center;
+    color: #4a4a4a ;
+    border: solid 1px #979797;
+    background-color: #ebebeb;
     z-index: 1;
 }

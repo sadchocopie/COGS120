@@ -64,7 +64,7 @@ main {
 }
 
 .SearchBar {
-	width: 800px;
+	width: 50p%;
 	height: 80px;
 	border: solid 1px #979797;
 	background-color: #ebebeb;
@@ -84,7 +84,7 @@ main {
 	display: inline-block;
 	top: 40%;
 	left: 30%;
-	width: 600px;
+	width: 50%;
 	height: 60px;
 	border: solid 1px #979797;
 	background-color: #ebebeb;

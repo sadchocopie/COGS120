@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Store</title>
+
+	    <base href="./">
+	    <link rel="stylesheet" type="text/css" href="./test.css">
+	</head>
+
+	<body>
+
+		<script id="results-template" type="text/x-handlebars-template">
+			<div class="itemBox" id="itemBox{{index}}">
+					<!-- Image square -->
+					<div class="innerBox" id="innerBox1">
+						<img src="{{itemImage}}" class="itemPic">
+					</div>
+
+					<div class="bottomBox">
+						<p class="resultsText" id="title">{{title}}</p>
+						<img src="./assets/imgs/heart-nofill.png" class="itemHeart">
+						<p class="resultsText" id="textPrice">Price</p>
+						<p class="resultsText" id="itemPrice">{{price}}</p>
+						<p class="resultsText" id="ratingText">Ratings</p>
+						<img class="stars" src="./assets/imgs/5stars.png">
+						<p class="storeText">{{store}}</p>
+					</div>
+				</div>
+		</script>
+
+		<div id="templatedResult">
+		</div>
+
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="js/handlebars-v4.0.12.js"></script>
+		<script src="js/database.js"></script>
+	</body>
+</html>

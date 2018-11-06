@@ -1,0 +1,92 @@
+.itemBox {
+	width: 360px;
+	height: 540px;
+	border: solid 1px #979797;
+	background-color: #ffffff;
+}
+
+#itemBox1 {
+	position: absolute;
+}
+
+.innerBox {
+	position: relative;
+	top: 5%;
+	left: 8%;
+  	width: 300px;
+  	height: 300px;
+  	border: solid 1px #979797;
+  	background-color: #ffffff;
+}
+
+.bottomBox {
+	position: relative;
+	top: 57px;
+	left: -1px;
+  	width: 360px;
+  	height: 180px;
+  	border: solid 1px #979797;
+  	background-color: #ffffff;
+}
+
+.resultsText {
+	position: relative;
+  	font-family: Helvetica;
+  	font-size: 24px;
+  	font-weight: bold;
+  	color: #4a4a4a;
+}
+
+
+#textPrice {
+	position: absolute;
+	top: 15%;
+	left: 3%;
+}
+
+.storeText {
+	position: absolute;
+	top: 50%;
+	left: 3%;
+	font-family: Helvetica;
+	font-size: 36px;
+	font-weight: bold;
+	color: #4a90e2;
+}
+
+.itemHeart {
+	position: absolute;
+	top: 5%;
+	left: 80%;
+	width: 9%;
+}
+
+.itemPic {
+	width: 100%;
+}
+
+#title {
+	position: absolute;
+	font-size: 26px;
+	top: -8%;
+	left: 3%;
+}
+
+.stars {
+	position: absolute;
+	top: 47%;
+	left: 40%;
+	width: 50%;
+}
+
+#itemPrice {
+	position: absolute;
+	top: 15%;
+	left: 80%;
+}
+
+#ratingText {
+	position: absolute;
+	top: 35%;
+	left: 3%;
+}

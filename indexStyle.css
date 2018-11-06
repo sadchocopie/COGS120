@@ -64,19 +64,24 @@ main {
 }
 
 .SearchBar {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 25%;
     width: 50%;
-    height: 80px;
+    height: 55px;
     border: solid 1px #979797;
     background-color: #ebebeb;
     text-align: center;
 }
 
 .searchButton {
-    position: relative;
-    bottom: -20px;
-    left: -5.5%;
-    width: 60px;
-    height: 60px;
+    position: absolute;
+    display: inline-flex;
+    top: 51%;
+    left: 70%;
+    width: 45px;
+    height: 45px;
 }
 
 .footer1 {

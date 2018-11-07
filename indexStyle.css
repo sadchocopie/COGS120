@@ -42,8 +42,6 @@ input, select, textarea {
     font-size: 35px;
 }
 
-
-
 .Find-Prompt {
     margin:auto;
     display: flex;
@@ -54,16 +52,14 @@ input, select, textarea {
     font-size: 64px;
     font-weight: bold;
     color: #4a4a4a;
-
 }
 
 main {
     text-align: center;
 }
 
-.form {
+.searchform {
     margin:auto;
-    padding-top: 20%;
 }
 
 .SearchBar {
@@ -136,10 +132,10 @@ li {
 
 #locationMenu {
     position: relative;
-    width: 299px;
+    width: 280px;
     height: 30px;
     font-family: Helvetica;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
     color: #4a4a4a ;
     border: solid 1px #979797;

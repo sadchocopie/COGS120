@@ -57,8 +57,11 @@ main {
     color: #4a4a4a;
 }
 
+.searchform {
+}
 
-.miniSearchBar {
+
+.miniSearchBar {   
     position: absolute;
     display: flex;
     top: 6%;
@@ -68,15 +71,17 @@ main {
     border: solid 1px #979797;
     background-color: #ebebeb;
     text-align: center;
+  
 }
 
 .miniSearchButton {
     position: absolute;
-    display: inline-flex;
+    display: flex;
     top: 7%;
-    left: 65%;
+    left: 66%;
     width: 40px;
     height: 40px;
+    
 }
 
 input, select, textarea {

@@ -39,7 +39,7 @@ nav {
 }
 
 main {
-    text-align: center;
+
 }
 
 .Find-Prompt {
@@ -159,26 +159,25 @@ body {
     color: orange;
 }
 
-#backExplore {
 
+.pageBar {
     position: relative;
-    top: 25%;
-    left: -35%;
+    z-index: 40;
+}
+
+#backExplore {
+    position: relative;
     font-family: Helvetica;
     font-size: 36px;
     font-weight: bold;
-
+    z-index: 1;
     color: #4a4a4a;
+    border: none;
+    background-color: transparent;
 }
 
 #savedText {
-    width: 133px;
-    height: 43px;
-    position: absolute;
-    top: 33%;
-    left: 45%;
-    right: 40%;
-    bottom: 56%;
+    position: relative;
     font-family: Helvetica;
     font-size: 36px;
     font-weight: bold;
@@ -187,11 +186,14 @@ body {
     line-height: normal;
     letter-spacing: normal;
     color: #4a4a4a;
+    border: none;
+    background-color: transparent;
+    
 }
 
 .analyze {
-    position: absolute;
-    top: 36%;
+    position: relative;
+    top: 5%;
     left: 79.75%;
     width: 200px;
     height: 60px;
@@ -201,7 +203,7 @@ body {
 
 #analyzeText {
     position: relative;
-    top: -45%;
+    top: 15%;
     font-family: Helvetica;
     font-size: 36px;
     font-weight: bold;
@@ -260,6 +262,8 @@ body {
 }
 
 .itemBox {
+    position: absolute;
+    display: inline-block;
     width: 360px;
     height: 540px;
     border: solid 1px #979797;
@@ -267,20 +271,20 @@ body {
 }
 
 #itemBox1 {
-    position: relative;
-    left: 5.8%;
+    position: absolute;
+    left: 10%;
+
 }
 
 #itemBox2 {
     position: absolute;
-    top: 360px;
-    left: 37.6%;
+    left: 40%;
+    
 }
 
 #itemBox3 {
-    position: relative;
-    top: -485px;
-    left: 133%;
+    position: absolute;
+    left: 70%
 }
 
 #itemBox3spec {
@@ -290,21 +294,20 @@ body {
 }
 
 .innerBox {
-    position: relative;
-    top: 5%;
-    left: 8%;
-    width: 300px;
-    height: 300px;
+position: absolute;
+    margin: 10px;
+    width: 340px;
+    height: 340px;
     border: solid 1px #979797;
     background-color: #ffffff;
 }
 
 .bottomBox {
-    position: relative;
-    top: 57px;
-    left: -1px;
-    width: 360px;
-    height: 180px;
+    position: absolute;
+    margin: 10px;
+    top: 65%;
+    width: 340px;
+    height: 160px;
     border: solid 1px #979797;
     background-color: #ffffff;
 }
@@ -315,13 +318,13 @@ body {
 
 .itemHeart {
     position: relative;
-    top: 15px;
-    left: 40%;
+    top: 10px;
+    right: -85%;
     width: 9%;
 }
 
 .resultsText {
-    position: relative;
+    position: absolute
     font-family: Helvetica;
     font-size: 24px;
     font-weight: bold;
@@ -330,17 +333,20 @@ body {
 
 
 #textPrice {
-    left: -33%;
+    position: absolute;
+    top: 15%;
 }
 
 #itemPrice {
-    top: -30%;
-    left: 40%;
+     position: absolute;
+    right: 5%;
+    top: 15%;
+
 }
 
 #ratingText {
-    top: -35%;
-    left: -29.5%;
+    position: absolute;
+    top: 40%;
 }
 
 .stars {
@@ -351,9 +357,8 @@ body {
 }
 
 .storeText {
-    position: relative;
-    top: -83%;
-    left: -23%;
+    position: absolute;
+    top: 55%;
     font-family: Helvetica;
     font-size: 36px;
     font-weight: bold;

@@ -36,10 +36,11 @@
             </div>
         </header>
         <main>
-            <p id="backExplore"><a href="./explore.html">Back to Explore</a></p>
-            <p id="savedText">Saved</p>
-            <div class="analyze">
-                <p id="analyzeText"><a href="./analyze.html">Analyze</a></p>
+            <div class="pageBar">
+                <button type ="button" id="backExplore"><a href="./explore.html">Back to Explore</a></button>
+                <button type="button" id="savedText"><a href="#">Saved</a></button>
+                <button type="button" id="analyzeText" onclick="./analyze.html">Analyze</button>
+
             </div>
 
             <div class="itemBox" id="itemBox1">
@@ -74,23 +75,25 @@
                     <img class="stars" src="./assets/imgs/5stars.png">
                     <p class="storeText">Target</p>
                 </div>
+            </div>
 
-                <div class="itemBox" id="itemBox3">
+            <div class="itemBox" id="itemBox3">
 
-                    <!-- Image square -->
-                    <div class="innerBox">
-                        <img src="./assets/imgs/cow-brick.jpg" class="itemPic">
-                    </div>
-
-                    <div class="bottomBox">
-                        <img src="./assets/imgs/heart-nofill.png" class="itemHeart">
-                        <p class="resultsText" id="textPrice">Price</p>
-                        <p class="resultsText" id="itemPrice">$8.5</p>
-                        <p class="resultsText" id="ratingText">Ratings</p>
-                        <img class="stars" src="./assets/imgs/5stars.png">
-                        <p class="storeText">Walmart</p>
-                    </div>
+                <!-- Image square -->
+                <div class="innerBox">
+                    <img src="./assets/imgs/cow-brick.jpg" class="itemPic">
                 </div>
-                </main>
-            </body>
-        </html>
+
+                <div class="bottomBox">
+                    <img src="./assets/imgs/heart-nofill.png" class="itemHeart">
+                    <p class="resultsText" id="textPrice">Price</p>
+                    <p class="resultsText" id="itemPrice">$8.5</p>
+                    <p class="resultsText" id="ratingText">Ratings</p>
+                    <img class="stars" src="./assets/imgs/5stars.png">
+                    <p class="storeText">Walmart</p>
+                </div>
+            </div>
+
+        </main>
+    </body>
+</html>

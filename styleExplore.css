@@ -191,7 +191,7 @@ body {
     color: #4a4a4a;
     border: none;
     background-color: transparent;
-    
+
 }
 
 #analyzeText {
@@ -241,7 +241,7 @@ body {
 #itemBox2 {
     position: absolute;
     left: 40%;
-    
+
 }
 
 #itemBox3 {
@@ -250,13 +250,17 @@ body {
 }
 
 #itemBox3spec {
-    position: relative;
-    top: -647px;
-    left: 133%;
+    position: absolute;
+    display: inline-block;
+    left: 70%;
+    width: 360px;
+    height: 540px;
+    border: solid 1px #979797;
+    background-color: #ffffff;
 }
 
 .innerBox {
-position: absolute;
+    position: absolute;
     margin: 10px;
     width: 340px;
     height: 340px;
@@ -285,11 +289,18 @@ position: absolute;
 
 
 #rate3 {
+    position: absolute;
+    width: 360px;
+    height: 160px;
+    border: solid 1px #979797;
+    background-color: #ffffff;
     border: solid 3px orange;
     border-color: orange;
 }
 
+
 .aPriceImg {
+
     width: 100%;
 }
 
@@ -307,7 +318,7 @@ position: absolute;
 
 .resultsText {
     position: absolute
-    font-family: Helvetica;
+        font-family: Helvetica;
     font-size: 24px;
     font-weight: bold;
     color: #4a4a4a;
@@ -320,7 +331,7 @@ position: absolute;
 }
 
 #itemPrice {
-     position: absolute;
+    position: absolute;
     right: 5%;
     top: 15%;
 

@@ -317,11 +317,21 @@ body {
 }
 
 .resultsText {
-    position: absolute
-        font-family: Helvetica;
+    position: absolute;
+    font-family: "Helvetica";
     font-size: 24px;
-    font-weight: bold;
     color: #4a4a4a;
+}
+
+#title {
+    position: absolute;
+    width: 280px;
+    font-size: 26px;
+    font-weight: bold;
+    top: -8%;
+    overflow: hidden;
+    white-space: nowrap; /* Don't forget this one */
+    text-overflow: ellipsis;
 }
 
 
@@ -352,7 +362,7 @@ body {
 .storeText {
     position: absolute;
     top: 55%;
-    font-family: Helvetica;
+    font-family: "Helvetica";
     font-size: 36px;
     font-weight: bold;
     color: #4a90e2;

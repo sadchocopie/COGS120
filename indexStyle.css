@@ -45,29 +45,28 @@ input, select, textarea {
 
 
 .Find-Prompt {
-    position: relative;
-    top: 25%;
-    left: 40%;
-    right: 40%;
-    bottom: 56%;
-    width: 311px;
+    margin:auto;
+    display: flex;
+    padding-top: 10%;
+    width: 300px;
     height: 154px;
-    font-family: Helvetica;
+    font-family: "Helvetica";
     font-size: 64px;
     font-weight: bold;
-    text-align: center;
     color: #4a4a4a;
+    
 }
 
 main {
     text-align: center;
 }
 
+.form {
+    margin:auto;
+    padding-top: 20%;
+}
+
 .SearchBar {
-    position: absolute;
-    display: flex;
-    top: 50%;
-    left: 25%;
     width: 50%;
     height: 55px;
     border: solid 1px #979797;
@@ -76,10 +75,9 @@ main {
 }
 
 .searchButton {
-    position: absolute;
-    display: inline-flex;
-    top: 51%;
-    left: 70%;
+    position: relative;
+    left: -55px;
+    top: 10px;
     width: 45px;
     height: 45px;
 }

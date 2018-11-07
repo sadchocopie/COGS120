@@ -96,8 +96,9 @@ body {
 
 .Sort-By {
     position: relative;
-    top: -25%;
-    left: 71.5%;
+    display: inline-flex;
+    left: 70%;
+    top: -15%;
     font-family: Helvetica;
     font-size: 24px;
     font-weight: normal;
@@ -106,6 +107,21 @@ body {
     line-height: normal;
     letter-spacing: normal;
     color: #4a4a4a;
+}
+
+.sortMenu {
+    position: relative;
+    display: inline-flex;
+    left: 70%;
+    top: -15%;
+    width: 299px;
+    height: 30px;
+    font-family: Helvetica;
+    font-size: 24px;
+    text-align: center;
+    color: #4a4a4a ;
+    border: solid 1px #979797;
+    background-color: #ebebeb
 }
 
 .Explore {
@@ -224,19 +240,6 @@ body {
     width: 100%;
 }
 
-.sortMenu {
-    position: relative;
-    width: 299px;
-    height: 30px;
-    top: -65px;
-    left: 78%;
-    font-family: Helvetica;
-    font-size: 24px;
-    text-align: center;
-    color: #4a4a4a ;
-    border: solid 1px #979797;
-    background-color: #ebebeb
-}
 
 .itemBox {
     position: absolute;

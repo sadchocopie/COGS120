@@ -67,9 +67,13 @@
 
 #title {
 	position: absolute;
+	width: 280px;
 	font-size: 26px;
 	top: -8%;
 	left: 3%;
+	overflow: hidden;
+	white-space: nowrap; /* Don't forget this one */
+	text-overflow: ellipsis;
 }
 
 .stars {

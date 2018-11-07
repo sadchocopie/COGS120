@@ -1,9 +1,8 @@
-var test = {'title': 'Extra Amazing Mug',
+var test = {'title': 'National Tree 7 Foot Dunhill Fir Tree (DUH-70)',
 			'itemImage': './assets/imgs/cow-brick.jpg',
 			'price': '$8',
 			'index': 1,
 			'store': 'UglyStore'};
-
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {

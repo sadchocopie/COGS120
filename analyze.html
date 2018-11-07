@@ -22,7 +22,7 @@
                 </form>
 
                 <!--because of how oval isnt an img its is misalgined-->
-                <a href="./account.html"><img src="./assets/imgs/heart-nofill.png" id="accoundIcon"></a>
+                <a href="./account.html"><img src="./assets/imgs/userImg.jpg" id="accountIcon"></a>
                 <a href="./saved.html"><img src="./assets/imgs/heart-nofill.png" id="heart"></a>
             </nav>
 
@@ -38,12 +38,12 @@
             </div>
         </header>
         <main>
-            <p id="backExplore"><a href="./explore.html">Back to Explore</a></p>
-            <p id="savedText">Saved</p>
-            <div class="analyzeOrange">
-                <p id="analyzeTextOrange"><a href="./analyze.html">Analyze</a></p>
-            </div>
+             <div class="pageHeader">
+                <button type ="button" id="backExplore"><a href="./explore.html">Back to Explore</a></button>
+                <button type="button" id="savedText"><a href="#">Saved</a></button>
+                <button type="button" id="analyzeText" onclick="./analyze.html">Analyze</button>
 
+            </div>
             <div class="itemBox" id="itemBox1">
 
                 <!-- Image square -->
@@ -84,6 +84,8 @@
                 <div class="rateBox" id="rate2">
                     <img class="aPriceImg" src="./assets/imgs/pricematch.png">
                 </div>
+                </div>
+
 
                 <div class="itemBox" id="itemBox3spec">
 
@@ -100,12 +102,12 @@
                         <img class="stars" src="./assets/imgs/5stars.png">
                         <p class="storeText">Walmart</p>
                     </div>
-
-                    <div class="rateBox" id="rate3">
-                        <img class="aPriceImg" src="./assets/imgs/pricematch.png">
-                        <p class="ExploreOrange"> Recommended</p>
-                    </div>
                 </div>
-                </main>
-            </body>
-        </html>
+<!--
+                <div class="rateBox" id="rate3">
+                    <img class="aPriceImg" src="./assets/imgs/pricematch.png">
+                    <p class="ExploreOrange"> Recommended</p>
+                </div> -->
+        </main>
+    </body>
+</html>

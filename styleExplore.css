@@ -114,7 +114,7 @@ body {
     display: inline-flex;
     left: 70%;
     top: -15%;
-    width: 299px;
+    width: 280px;
     height: 30px;
     font-family: Helvetica;
     font-size: 24px;
@@ -213,6 +213,7 @@ body {
     background-color: #ffffff;
 }
 
+
 #analyzeTextOrange {
     position: relative;
     top: -45%;
@@ -221,25 +222,6 @@ body {
     font-weight: bold;
     color: orange;
 }
-
-.rateBox {
-    position: relative;
-    top: 15%;
-    width: 360px;
-    height: 160px;
-    border: solid 1px #979797;
-    background-color: #ffffff;
-}
-
-#rate3 {
-    border: solid 3px orange;
-    border-color: orange;
-}
-
-.aPriceImg {
-    width: 100%;
-}
-
 
 .itemBox {
     position: absolute;
@@ -291,6 +273,26 @@ position: absolute;
     border: solid 1px #979797;
     background-color: #ffffff;
 }
+
+.rateBox {
+    position: absolute;
+    top: 105%;
+    width: 360px;
+    height: 160px;
+    border: solid 1px #979797;
+    background-color: #ffffff;
+}
+
+
+#rate3 {
+    border: solid 3px orange;
+    border-color: orange;
+}
+
+.aPriceImg {
+    width: 100%;
+}
+
 
 .itemPic {
     width: 100%;

@@ -54,7 +54,7 @@ input, select, textarea {
     font-size: 64px;
     font-weight: bold;
     color: #4a4a4a;
-    
+
 }
 
 main {
@@ -82,60 +82,62 @@ main {
     height: 45px;
 }
 
-.footer1 {
+footer {
     position: absolute;
-    top: 87.4%;
+    top: 87%;
+    width: 99%;
+    height: 40px;
+    border: solid 1px #b4b4b4;
+    background-color: #ffffff;
+}
+
+ul#footerMenu li {
+    display:inline;
+}
+
+
+.footerText {
+    position: relative;
+    top: -6px;
+    display: flex;
+    font-family: "Helvetica";
+    font-size: 20px;
+    font-weight: bold;
+    color: #4a4a4a;
+    white-space:nowrap;
+    z-index: 1;
+}
+
+li {
+    flex-grow: 4;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.footer2 {
+    position: absolute;
+    padding-top: 10px;
+    top: 92%;
     width: 99%;
     height: 50px;
     border: solid 1px #b4b4b4;
     background-color: #ffffff;
 }
 
-.footer2 {
-    position: absolute;
-    top: 93%;
-    width: 99%;
-    height: 79px;
-    border: solid 1px #b4b4b4;
-    background-color: #ffffff;
-}
-
-.footerText {
-    font-family: Helvetica;
-    font-size: 24px;
+#location {
+    margin: auto;
+    font-size: 20px;
+    font-family: "Helvetica";
     font-weight: bold;
     color: #4a4a4a;
+    white-space:nowrap;
     z-index: 1;
-}
-
-#aboutUs {
-    position: absolute;
-    top: 85%;
-    left: 20%;
-}
-
-#FAQ {
-    position: absolute;
-    top: 85%;
-    left: 45%;
-}
-
-#contact {
-    position: absolute;
-    top: 85%;
-    left: 70%;
-}
-
-#location {
-    position: relative;
-    left: -15%;
 }
 
 #locationMenu {
     position: relative;
     width: 299px;
     height: 30px;
-    top: -52px;
     font-family: Helvetica;
     font-size: 24px;
     text-align: center;

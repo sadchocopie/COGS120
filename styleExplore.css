@@ -39,7 +39,10 @@ nav {
 }
 
 main {
-
+    /*
+    display: grid;
+    grid-template-columns: 25rem 25rem 25rem;
+    grid-template-rows: 10rem 10rem; */
 }
 
 .Find-Prompt {
@@ -71,7 +74,7 @@ main {
     border: solid 1px #979797;
     background-color: #ebebeb;
     text-align: center;
-  
+
 }
 
 .miniSearchButton {
@@ -81,7 +84,7 @@ main {
     left: 66%;
     width: 40px;
     height: 40px;
-    
+
 }
 
 input, select, textarea {

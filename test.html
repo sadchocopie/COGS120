@@ -6,7 +6,8 @@
 	    <title>Store</title>
 
 	    <base href="./">
-	    <link rel="stylesheet" type="text/css" href="./test.css">
+	    <link rel="stylesheet" type="text/css" href="./styleExplore.css">
+	    <script type="text/javascript" src="database.json"></script>
 	</head>
 
 	<body>
@@ -14,18 +15,18 @@
 		<script id="results-template" type="text/x-handlebars-template">
 			<div class="itemBox" id="itemBox{{index}}">
 					<!-- Image square -->
-					<div class="innerBox" id="innerBox1">
-						<img src="{{itemImage}}" class="itemPic">
+					<div class="innerBox">
+						<img src="{{Link}}" class="itemPic">
 					</div>
 
 					<div class="bottomBox">
-						<p class="resultsText" id="title">{{title}}</p>
+						<p class="resultsText" id="title">{{Description}}</p>
 						<img src="./assets/imgs/heart-nofill.png" class="itemHeart">
 						<p class="resultsText" id="textPrice">Price</p>
-						<p class="resultsText" id="itemPrice">{{price}}</p>
+						<p class="resultsText" id="itemPrice">{{Price}}</p>
 						<p class="resultsText" id="ratingText">Ratings</p>
 						<img class="stars" src="./assets/imgs/5stars.png">
-						<p class="storeText">{{store}}</p>
+						<p class="storeText">{{Store}}</p>
 					</div>
 				</div>
 		</script>
@@ -33,8 +34,12 @@
 		<div id="templatedResult">
 		</div>
 
+		<script>
+			var local_data = data;
+		</script>
+
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<script src="js/handlebars-v4.0.12.js"></script>
-		<script src="js/database.js"></script>
+		<script src="js/showResults.js"></script>
 	</body>
 </html>

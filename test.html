@@ -6,7 +6,8 @@
 	    <title>Store</title>
 
 	    <base href="./">
-	    <link rel="stylesheet" type="text/css" href="./test.css">
+	    <link rel="stylesheet" type="text/css" href="./styleExplore.css">
+	    <script type="text/javascript" src="database.json"></script>
 	</head>
 
 	<body>
@@ -33,8 +34,12 @@
 		<div id="templatedResult">
 		</div>
 
+		<script>
+			var local_data = data;
+		</script>
+
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<script src="js/handlebars-v4.0.12.js"></script>
-		<script src="js/database.js"></script>
+		<script src="js/showResults.js"></script>
 	</body>
 </html>

@@ -16,6 +16,13 @@ nav {
     background-color: #ebebeb;
 }
 
+html {
+    background-image:linear-gradient(rgba(255, 255, 255, 0.6), 
+        rgba(255, 255, 255, 0.6)),url(/assets/imgs/screenPic.png);
+    background-size: 120%;
+}
+
+
 /*lol accountICon isnt there yet*/
 #accountIcon {
     position: absolute;
@@ -83,10 +90,11 @@ placeholder {
 }
 
 footer {
+    text-align: center;
     position: absolute;
-    top: 87%;
-    width: 99%;
-    height: 40px;
+    top: 95%;
+    width: 100%;
+    height: 45px;
     border: transparent 1px #b4b4b4;
     background-color: #8CA6BF;
 }
@@ -114,15 +122,17 @@ li {
     margin-right: 5%;
 }
 
+/*
 .footer2 {
+    text-align: right;
     position: absolute;
-    padding-top: 10px;
-    top: 92%;
-    width: 99%;
-    height: 50px;
+    top: 100%;
+    width: 100%;
+    height: 20px;
     border: transparent 1px #b4b4b4;
     background-color: #ffffff;
-}
+} 
+*/
 
 #location {
     margin: auto;
@@ -137,8 +147,8 @@ li {
 #locationMenu {
     position: relative;
     width: 280px;
-    height: 30px;
-    font-family: Helvetica;
+    height: 25px;
+    font-family: "Helvetica";
     font-size: 20px;
     text-align: center;
     color: #4a4a4a ;

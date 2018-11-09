@@ -5,6 +5,10 @@ nav {
     background-color: #ffffff;
 }
 
+body {
+    background-color: #E1E4E8;
+}
+
 #logoPicture {
     position: absolute;
     display: inline-flex;
@@ -66,7 +70,7 @@ nav {
     width: 40%;
     height: 50px;
     border: solid 1px #979797;
-    background-color: #ebebeb;
+    background-color: #ffffff;
     text-align: center;
 
 }
@@ -83,10 +87,6 @@ nav {
 
 input, select, textarea {
     font-size: 35px;
-}
-
-body {
-    background-color: rgba(216, 216, 216, 0.5);
 }
 
 .sortRect {

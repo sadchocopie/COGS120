@@ -66,8 +66,12 @@ main {
     width: 50%;
     height: 55px;
     border: solid 1px #979797;
-    background-color: #ebebeb;
+    background-color: #ffffff;
     text-align: center;
+}
+
+placeholder {
+    background-color: #ebebeb;
 }
 
 .searchButton {
@@ -83,8 +87,8 @@ footer {
     top: 87%;
     width: 99%;
     height: 40px;
-    border: solid 1px #b4b4b4;
-    background-color: #ffffff;
+    border: transparent 1px #b4b4b4;
+    background-color: #8CA6BF;
 }
 
 ul#footerMenu li {
@@ -99,7 +103,7 @@ ul#footerMenu li {
     font-family: "Helvetica";
     font-size: 20px;
     font-weight: bold;
-    color: #4a4a4a;
+    color: #E1E4E8;
     white-space:nowrap;
     z-index: 1;
 }
@@ -116,7 +120,7 @@ li {
     top: 92%;
     width: 99%;
     height: 50px;
-    border: solid 1px #b4b4b4;
+    border: transparent 1px #b4b4b4;
     background-color: #ffffff;
 }
 

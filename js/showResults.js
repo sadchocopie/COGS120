@@ -14,29 +14,35 @@ $(document).ready(function() {
 
 	var parentDiv = $(".grid");
 
-	var html = template(test);
-	console.log(html);
-	parentDiv.append(html);
-
   for (var i = 0; i < local_data.length; i++) {
       var curData = local_data[i];
+
+      if(local_data[i].Description === "Null") {
+        console.log("OUT");
+        continue;
+      }
       var curHtml = template(curData);
       parentDiv.append(curHtml);
   }
   
-  // Use the URLSearchParams API to make fake-database queries using a URL
-  // https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
- /* var queryParams = new URLSearchParams(window.location.search);
+  
+  var queryParams = new URLSearchParams(window.location.search);
   var projectTitle = queryParams.get('itemBox');
   
   console.log('query for', projectTitle);
   // to get this to work like in class, comment out the "STEP 1" parts
   // above between BEGIN and END.
   for (var i = 0; i < local_data.length; i++) {
-    var curData = complexData[i];
+    var curData = local_data[i];
+
+    // skip the items with null values
+    if(local_data[i].Description === "Null") {
+        continue;
+    }
+
     if (curData.title == projectTitle) {
       var curHtml = template(curData);
       parentDiv.append(curHtml);
     }
-  }*/
+  }
 });

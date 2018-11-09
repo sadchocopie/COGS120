@@ -168,17 +168,14 @@
         <script>
 
             function updateSaved (clicked_id) {
-                    return (this.tog = !this.tog) ? like(clicked_id) : unlike(clicked_id);
+                return (document.getElementById(clicked_id).tog = !document.getElementById(clicked_id).tog) ? like(clicked_id) : unlike(clicked_id);
                 console.log("works?");
             };
-
 
 
             function like(clicked_id) {
 
                 document.getElementById(clicked_id).src = "/assets/imgs/Instagram-Heart-PNG-Red.png";
-
-
                 console.log(document.getElementById(clicked_id).parentElement.parentElement.id);
 
                 var key = document.getElementById(clicked_id).parentElement.parentElement.id;
@@ -188,8 +185,8 @@
                 saved.push(obj);
                 console.log(saved);
             };
-            
-            
+
+
             function unlike(clicked_id) {
 
                 document.getElementById(clicked_id).src = "/assets/imgs/heart-nofill.png";
@@ -199,12 +196,10 @@
                 //var obj = {};
                 //obj[key] = value;
                 //saved.push(obj);
+
                 delete saved[key];
                 console.log(saved);
             };
-
-
         </script>
-
     </body>
 </html>

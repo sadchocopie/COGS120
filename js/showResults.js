@@ -30,7 +30,8 @@ $(document).ready(function() {
   var projectTitle = queryParams.get('itemBox');
   
   console.log('query for', projectTitle);
-  
+  // to get this to work like in class, comment out the "STEP 1" parts
+  // above between BEGIN and END.
   for (var i = 0; i < local_data.length; i++) {
     var curData = local_data[i];
 

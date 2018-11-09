@@ -8,6 +8,8 @@
         <base href="./">
         <link rel="stylesheet" type="text/css" href="./styleExplore.css">
         <script type="text/javascript" src="database.json"></script>
+        <script type="text/javascript" src="./js/saved.js">
+         </script>
     </head>
     <body>
         <header>
@@ -88,7 +90,7 @@
                 var value = document.getElementById(clicked_id).id;
                 var obj = {};
                 obj[key] = value;
-                saved.push(obj);
+                saved[key] = value; 
                 console.log(saved);
             };
 
@@ -98,11 +100,6 @@
                 document.getElementById(clicked_id).src = "./assets/imgs/heart-nofill.png";
                 console.log(document.getElementById(clicked_id).parentElement.parentElement.id);
                 var key = document.getElementById(clicked_id).parentElement.parentElement.id;
-                //var value = document.getElementById(clicked_id).id;
-                //var obj = {};
-                //obj[key] = value;
-                //saved.push(obj);
-
                 delete saved[key];
                 console.log(saved);
             };

@@ -12,9 +12,12 @@ body {
 #logoPicture {
     position: absolute;
     display: inline-flex;
-    top: 15px;
+    top: 5%;
     left: 5%;
-    height:90px;
+    width: 250px;
+    height: 60px;
+    border: solid 1px #979797;
+    background-color: #ebebeb;
 }
 
 /*lol accountICon isnt there yet*/

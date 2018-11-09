@@ -46,7 +46,7 @@
                     </div>
 
                     <div class="bottomBox">
-                        <img src="./assets/imgs/heart-nofill.png" class="itemHeart" id="itemHeart1" onclick="makeRed(this.id)">
+                        <img src="./assets/imgs/heart-nofill.png" class="itemHeart" id="itemHeart1" onclick="likes(this.id)">
                         <p class="resultsText" id="textPrice">Price</p>
                         <p class="resultsText" id="itemPrice">$7</p>
                         <p class="resultsText" id="ratingText">Ratings</p>
@@ -63,7 +63,7 @@
                     </div>
 
                     <div class="bottomBox">
-                        <img src="./assets/imgs/heart-nofill.png" class="itemHeart" id="itemHeart2" onclick="makeRed(this.id)">
+                        <img src="./assets/imgs/heart-nofill.png" class="itemHeart" id="itemHeart2" onclick="likes(this.id)">
                         <p class="resultsText" id="textPrice">Price</p>
                         <p class="resultsText" id="itemPrice">$8</p>
                         <p class="resultsText" id="ratingText">Ratings</p>
@@ -167,8 +167,18 @@
 
         <script>
 
+            function likes (clicked_id) {
+                    return (this.tog = !this.tog) ? makeRed(clicked_id) : unlike(clicked_id);
+                console.log("works?");
+            };
+
+
+
             function makeRed(clicked_id) {
+
                 document.getElementById(clicked_id).src = "/assets/imgs/Instagram-Heart-PNG-Red.png";
+
+
                 console.log(document.getElementById(clicked_id).parentElement.parentElement.id);
 
                 var key = document.getElementById(clicked_id).parentElement.parentElement.id;
@@ -177,9 +187,20 @@
                 obj[key] = value;
                 saved.push(obj);
                 console.log(saved);
-            }
+            };
+            
+            
+            function unlike(clicked_id) {
 
-
+                document.getElementById(clicked_id).src = "/assets/imgs/heart-nofill.png";
+                console.log(document.getElementById(clicked_id).parentElement.parentElement.id);
+                var key = document.getElementById(clicked_id).parentElement.parentElement.id;
+                var value = document.getElementById(clicked_id).id;
+                var obj = {};
+                obj[key] = value;
+                saved.push(obj);
+                console.log(saved);
+            };
 
 
         </script>

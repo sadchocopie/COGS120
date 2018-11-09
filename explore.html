@@ -7,6 +7,7 @@
 
         <base href="./">
         <link rel="stylesheet" type="text/css" href="./styleExplore.css">
+        <script type="text/javascript" src="database.json"></script>
     </head>
     <body>
         <header>
@@ -38,124 +39,64 @@
         </header>
         <main>
             <p class="Explore">Explore</p>
+
+            <script id="results-template" type="text/x-handlebars-template">
+            	
+            	<div class="itemBox" id="itemBox{{Index}}">
+            			<!-- Image square -->
+            			<div class="innerBox">
+            				<img src="{{Link}}" class="itemPic">
+            			</div>
+
+            			<div class="bottomBox">
+            				<p class="resultsText" id="title">{{Description}}</p>
+            				<img src="./assets/imgs/heart-nofill.png" class="itemHeart">
+            				<p class="resultsText" id="textPrice">Price</p>
+            				<p class="resultsText" id="itemPrice">{{Price}}</p>
+            				<p class="resultsText" id="ratingText">Ratings</p>
+            				<img class="stars" src="./assets/imgs/{{Review}}stars.png">
+            				<p class="storeText">{{Store}}</p>
+            			</div>
+            		</div>
+            </script>
+
             <div class=grid>
-                <div class="itemBox" id="itemBox1">
-
-                    <!-- Image square -->
-                    <div class="innerBox" id="innerBox1">
-                        <img src="./assets/imgs/cow-brick.jpg" class="itemPic">
-                    </div>
-
-                    <div class="bottomBox">
-                        <img src="./assets/imgs/heart-nofill.png" class="itemHeart">
-                        <p class="resultsText" id="textPrice">Price</p>
-                        <p class="resultsText" id="itemPrice">$7</p>
-                        <p class="resultsText" id="ratingText">Ratings</p>
-                        <img class="stars" src="./assets/imgs/5stars.png">
-                        <p class="storeText">Amazon</p>
-                    </div> 
-                </div>
-
-                <div class="itemBox" id="itemBox2">
-
-                    <!-- Image square -->
-                    <div class="innerBox">
-                        <img src="./assets/imgs/cow-brick.jpg" class="itemPic">
-                    </div>
-
-                    <div class="bottomBox">
-                        <img src="./assets/imgs/heart-nofill.png" class="itemHeart">
-                        <p class="resultsText" id="textPrice">Price</p>
-                        <p class="resultsText" id="itemPrice">$8</p>
-                        <p class="resultsText" id="ratingText">Ratings</p>
-                        <img class="stars" src="./assets/imgs/5stars.png">
-                        <p class="storeText">Target</p>
-                    </div> 
-                </div>
-
-                <div class="itemBox" id="itemBox3">
-
-                    <!-- Image square -->
-                    <div class="innerBox">
-                        <img src="./assets/imgs/cow-brick.jpg" class="itemPic">
-                    </div>
-
-                    <div class="bottomBox">
-                        <img src="./assets/imgs/heart-nofill.png" class="itemHeart">
-                        <p class="resultsText" id="textPrice">Price</p>
-                        <p class="resultsText" id="itemPrice">$8.5</p>
-                        <p class="resultsText" id="ratingText">Ratings</p>
-                        <img class="stars" src="./assets/imgs/5stars.png">
-                        <p class="storeText">Walmart</p>
-                    </div> 
-                </div>
-
-                <div class="itemBox" id="itemBox4">
-
-                    <!-- Image square -->
-                    <div class="innerBox">
-                        <img src="./assets/imgs/cow-brick.jpg" class="itemPic">
-                    </div>
-
-                    <div class="bottomBox">
-                        <img src="./assets/imgs/heart-nofill.png" class="itemHeart">
-                        <p class="resultsText" id="textPrice">Price</p>
-                        <p class="resultsText" id="itemPrice">$8.5</p>
-                        <p class="resultsText" id="ratingText">Ratings</p>
-                        <img class="stars" src="./assets/imgs/5stars.png">
-                        <p class="storeText">Store 4</p>
-                    </div> 
-                </div>
-
-                <div class="itemBox" id="itemBox5">
-
-                    <!-- Image square -->
-                    <div class="innerBox">
-                        <img src="./assets/imgs/cow-brick.jpg" class="itemPic">
-                    </div>
-
-                    <div class="bottomBox">
-                        <img src="./assets/imgs/heart-nofill.png" class="itemHeart">
-                        <p class="resultsText" id="textPrice">Price</p>
-                        <p class="resultsText" id="itemPrice">$8.5</p>
-                        <p class="resultsText" id="ratingText">Ratings</p>
-                        <img class="stars" src="./assets/imgs/5stars.png">
-                        <p class="storeText">Store 5</p>
-                    </div> 
-                </div>
-                <div class="itemBox" id="itemBox6">
-
-                    <!-- Image square -->
-                    <div class="innerBox">
-                        <img src="./assets/imgs/cow-brick.jpg" class="itemPic">
-                    </div>
-
-                    <div class="bottomBox">
-                        <img src="./assets/imgs/heart-nofill.png" class="itemHeart">
-                        <p class="resultsText" id="textPrice">Price</p>
-                        <p class="resultsText" id="itemPrice">$8.5</p>
-                        <p class="resultsText" id="ratingText">Ratings</p>
-                        <img class="stars" src="./assets/imgs/5stars.png">
-                        <p class="storeText">Store 6</p>
-                    </div> 
-                </div>
-                <div class="itemBox" id="itemBox7">
-
-                    <!-- Image square -->
-                    <div class="innerBox">
-                        <img src="./assets/imgs/cow-brick.jpg" class="itemPic">
-                    </div>
-
-                    <div class="bottomBox">
-                        <img src="./assets/imgs/heart-nofill.png" class="itemHeart">
-                        <p class="resultsText" id="textPrice">Price</p>
-                        <p class="resultsText" id="itemPrice">$8.5</p>
-                        <p class="resultsText" id="ratingText">Ratings</p>
-                        <img class="stars" src="./assets/imgs/5stars.png">
-                        <p class="storeText">Store 7</p>
-                    </div> 
-                </div>
-            </div>      
+            </div>  
         </main>
+
+        <script>
+        	var local_data = data;
+        </script>
+
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="js/handlebars-v4.0.12.js"></script>
+
+        <script>
+        	$(document).ready(function() {
+
+        		var source = $("#results-template").html();
+        		var template = Handlebars.compile(source);
+
+        		var parentDiv = $(".grid");
+
+        		var queryParams = new URLSearchParams(window.location.search);
+        		var projectTitle = queryParams.get("query");
+        		console.log(projectTitle);
+
+        		for (var i = 0; i < local_data.length; i++) {
+        		  var curData = local_data[i];
+
+        		  // skip the items with null values
+        		  if(local_data[i].Description === "Null") {
+        		      continue;
+        		  }
+
+        		  if (curData.Item.toUpperCase() === projectTitle.toUpperCase()) {
+        		    var curHtml = template(curData);
+        		    parentDiv.append(curHtml);
+        		  }
+        		}
+        	});
+        </script>
     </body>
 </html>

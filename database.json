@@ -41,7 +41,7 @@ var data = [
     "Description": "National Tree Company",
     "Link": "https://slimages.macysassets.com/is/image/MCY/products/0/optimized/10973450_fpx.tif?op_sharpen=1&wid=1230&hei=1500&fit=fit,1&$filterxlrg$",
     "Price": "$209.99",
-    "Review": "Null",
+    "Review": 3.5,
     "Index": 5
   },
   {
@@ -86,7 +86,7 @@ var data = [
     "Description": "Polar Insulated Water Bottle Bike 24oz White Blue Red USA Flag Assorted Patterns",
     "Link": "https://i.ebayimg.com/images/g/Bo4AAOSwVuNbDwlO/s-l1600.png",
     "Price": "$9.25",
-    "Review": "Null",
+    "Review": 2.5,
     "Index": 4
   },
   {
@@ -95,7 +95,7 @@ var data = [
     "Description": "16-Oz. Press & Go Iced Tea Tumbler, Created for Macy's",
     "Link": "https://slimages.macysassets.com/is/image/MCY/products/1/optimized/10112171_fpx.tif?op_sharpen=1&wid=500&hei=613&fit=fit,1&$filtersm$",
     "Price": "$15.99",
-    "Review": "Null",
+    "Review": 4,
     "Index": 5
   },
   {
@@ -104,7 +104,7 @@ var data = [
     "Description": "Takeya - Actives 32-Oz. Insulated Stainless Steel Water Bottle with Spout Lid - Onyx",
     "Link": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5981/5981115_rd.jpg;maxHeight=640;maxWidth=550",
     "Price": "$25.99",
-    "Review": 4.8,
+    "Review": 5,
     "Index": 6
   },
   {
@@ -131,7 +131,7 @@ var data = [
     "Description": "Keurig K-Mini Single Serve K-Cup Pod Coffee Maker",
     "Link": "https://target.scene7.com/is/image/Target/GUEST_a5039258-8baf-46fc-82f6-5b6b43e5ea1a?wid=488&hei=488&fmt=webp",
     "Price": "$69.99",
-    "Review": 4.2,
+    "Review": 4,
     "Index": 3
   },
   {
@@ -149,7 +149,7 @@ var data = [
     "Description": "BES870XL The Barista Express Espresso Maker",
     "Link": "https://slimages.macysassets.com/is/image/MCY/products/4/optimized/10340274_fpx.tif?op_sharpen=1&wid=500&hei=613&fit=fit,1&$filtersm$",
     "Price": "$599.99",
-    "Review": 4.8,
+    "Review": 5,
     "Index": 5
   },
   {
@@ -158,16 +158,16 @@ var data = [
     "Description": "Cuisinart - Coffee Center 12-Cup Coffee Maker and Single-Serve Brewer - Black/Stainless",
     "Link": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5781/5781003_sd.jpg;maxHeight=640;maxWidth=550",
     "Price": "$161.99",
-    "Review": 4.4,
+    "Review": 4.5,
     "Index": 6
   },
   {
     "Item": "Cow Bricks",
-    "Store": "Amazon",
-    "Description": "Null",
-    "Link": "Null",
-    "Price": "Null",
-    "Review": "Null",
+    "Store": "Ugly Store",
+    "Description": "Cow Bricks",
+    "Link": "./assets/imgs/cow-brick.jpg",
+    "Price": "$666.66",
+    "Review": 5,
     "Index": 1
   },
   {
@@ -266,7 +266,7 @@ var data = [
     "Description": "Ello - Jane 16-Oz. Travel Mug - Gray",
     "Link": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6239/6239105_rd.jpg;maxHeight=1000;maxWidth=1000",
     "Price": "$12.99",
-    "Review": 4.7,
+    "Review": 4.5,
     "Index": 6
   },
   {
@@ -284,7 +284,7 @@ var data = [
     "Description": "Vigo 32\" Undermount Stainless Steel Kitchen Sink, Grid and Strainer",
     "Link": "https://i5.walmartimages.com/asr/66d017f7-d168-4f54-a594-37a009e18bba_1.89352119bcef8d26015735f798eea3bd.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF",
     "Price": "$254.90",
-    "Review": 4.2,
+    "Review": 4,
     "Index": 2
   },
   {
@@ -338,7 +338,7 @@ var data = [
     "Description": "L'Oreal Paris Voluminous Lash Paradise Waterproof Mascara",
     "Link": "https://i5.walmartimages.com/asr/84815f45-ca0e-459c-8b77-1b6571bf6e4e_1.a83aae68bf3c91f0ace8b4af36bdb7f4.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF",
     "Price": 8.97,
-    "Review": 4.2,
+    "Review": 4,
     "Index": 2
   },
   {
@@ -347,7 +347,7 @@ var data = [
     "Description": "Maybelline® Lash Sensational%u2122 Mascara",
     "Link": "https://target.scene7.com/is/image/Target/GUEST_ecc28251-b0f9-4b7c-97cb-8227aae0d199?wid=1400",
     "Price": "$6.99",
-    "Review": 4.1,
+    "Review": 4,
     "Index": 3
   },
   {
@@ -356,7 +356,7 @@ var data = [
     "Description": "BENEFIT Roller Lash Mascara - Black - FULL SIZE - NEW 8.5g / .3 oz - USA",
     "Link": "https://i.ebayimg.com/images/g/jugAAOSwoUZbypAM/s-l1600.jpg",
     "Price": "$9.85",
-    "Review": null,
+    "Review": 3.5,
     "Index": 4
   },
   {
@@ -365,7 +365,7 @@ var data = [
     "Description": "Lancôme Definicils Lengthening and Defining Mascara, 0.21 oz.",
     "Link": "https://slimages.macysassets.com/is/image/MCY/products/2/optimized/10167792_fpx.tif?op_sharpen=1&wid=1230&hei=1500&fit=fit,1&$filterxlrg$",
     "Price": "$27.50",
-    "Review": 4.8,
+    "Review": 5,
     "Index": 5
   },
   {
@@ -392,7 +392,7 @@ var data = [
     "Description": "Neutrogena Moisturesmooth Color Stick, 100 Pink Nude,.011 Oz",
     "Link": "https://i5.walmartimages.com/asr/6393e21d-84d5-40fc-a0a6-082f2a7d7b84_1.c0dfd35e8ee53f6264c6bec5553aac96.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF",
     "Price": "$7.44",
-    "Review": 4.2,
+    "Review": 4,
     "Index": 2
   },
   {
@@ -401,7 +401,7 @@ var data = [
     "Description": "Maybelline Super Stay Matte Ink Lip Color - 0.17 fl oz",
     "Link": "https://target.scene7.com/is/image/Target/GUEST_7361858d-6a3f-4af2-b4b8-a6b37ed09a05?wid=488&hei=488&fmt=webp",
     "Price": "$7.99",
-    "Review": 4.2,
+    "Review": 4,
     "Index": 3
   },
   {
@@ -455,7 +455,7 @@ var data = [
     "Description": "Maybelline® FIT ME!® Matte + Poreless Foundation - Deep Shades - 1.0 fl oz",
     "Link": "https://target.scene7.com/is/image/Target/GUEST_b3be9f8b-772d-4f80-bc41-80849c6d2316?wid=488&hei=488&fmt=webp",
     "Price": "$5.99",
-    "Review": 4.2,
+    "Review": 4,
     "Index": 3
   },
   {
@@ -473,7 +473,7 @@ var data = [
     "Description": "Estée Lauder Double Wear Stay-in-Place Makeup, 1.0 oz.",
     "Link": "https://slimages.macysassets.com/is/image/MCY/products/6/optimized/2886646_fpx.tif?op_sharpen=1&wid=1230&hei=1500&fit=fit,1&$filterxlrg$",
     "Price": "$42.00",
-    "Review": 4.8,
+    "Review": 5,
     "Index": 5
   },
   {
@@ -500,7 +500,7 @@ var data = [
     "Description": "Maybelline Eye Studio Master Precise Pencil Eyeliner, Black",
     "Link": "https://i5.walmartimages.com/asr/86da78ed-e9a5-46bd-98d3-c20aa57d960a_1.01d6b1c71655393a0ea797a69577f44d.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF",
     "Price": "$6.94",
-    "Review": "Null",
+    "Review": 4,
     "Index": 2
   },
   {
@@ -509,7 +509,7 @@ var data = [
     "Description": "NYX Professional® Makeup Matte Liquid Liner Black - 0.06oz",
     "Link": "https://target.scene7.com/is/image/Target/GUEST_78032e92-bf40-4957-be9f-8161c5a18684?wid=1400",
     "Price": "$6.99",
-    "Review": 4.8,
+    "Review": 5,
     "Index": 3
   },
   {
@@ -527,7 +527,7 @@ var data = [
     "Description": "MAC Shiny Pretty Things Dazzleliner, 0.06 fl. oz. - Limited Edition",
     "Link": "https://slimages.macysassets.com/is/image/MCY/products/8/optimized/10390458_fpx.tif?op_sharpen=1&wid=1230&hei=1500&fit=fit,1&$filterxlrg$",
     "Price": "$22",
-    "Review": "Null",
+    "Review": 3.5,
     "Index": 5
   },
   {
@@ -554,7 +554,7 @@ var data = [
     "Description": "C.C. Women%u2019s Classic Beanie",
     "Link": "https://i5.walmartimages.com/asr/38e390ac-0582-4c17-a961-2ea0e8323e1b_1.c15e164dcedddb9a6229ca1ffeae9dc9.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF",
     "Price": "$10.00",
-    "Review": null,
+    "Review": 4,
     "Index": 2
   },
   {
@@ -581,7 +581,7 @@ var data = [
     "Description": "Polo Ralph Lauren Signature Merino Cuffed Beanie",
     "Link": "https://slimages.macysassets.com/is/image/MCY/products/5/optimized/2975745_fpx.tif?op_sharpen=1&wid=1230&hei=1500&fit=fit,1&$filterxlrg$",
     "Price": "$45",
-    "Review": 4.8,
+    "Review": 5,
     "Index": 5
   },
   {
@@ -590,7 +590,7 @@ var data = [
     "Description": "Panther Vision - POWERCAP 35/55 Lined Fleece Beanie - Black",
     "Link": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5578/5578072_sd.jpg;maxHeight=640;maxWidth=550",
     "Price": "$21.99",
-    "Review": 4.7,
+    "Review": 5,
     "Index": 6
   },
   {
@@ -608,7 +608,7 @@ var data = [
     "Description": "Athletic Works Men's Crew Socks 10-Pack",
     "Link": "https://i5.walmartimages.com/asr/54fb4978-7765-4aa3-b96a-c1726e57b314_1.c8e01017a645d98054db458cad526090.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF",
     "Price": "$9.25",
-    "Review": null,
+    "Review": 4,
     "Index": 2
   },
   {
@@ -617,7 +617,7 @@ var data = [
     "Description": "Hanes Premium Men's Xtemp Dry 6pk Crew Socks",
     "Link": "https://target.scene7.com/is/image/Target/GUEST_a534e619-81e9-4117-8598-8d2f30f3b2d9?wid=1400",
     "Price": "$13.99",
-    "Review": 4.8,
+    "Review": 5,
     "Index": 3
   },
   {
@@ -635,7 +635,7 @@ var data = [
     "Description": "Gold Toe Men's 8-Pack Crew Socks",
     "Link": "https://slimages.macysassets.com/is/image/MCY/products/6/optimized/8644516_fpx.tif?op_sharpen=1&wid=1230&hei=1500&fit=fit,1&$filterxlrg$",
     "Price": "$13.99",
-    "Review": 4.8,
+    "Review": 5,
     "Index": 5
   },
   {
@@ -644,7 +644,7 @@ var data = [
     "Description": "Bioworld - Destiny 2 Titan Crew Socks - Red",
     "Link": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6003/6003711_sd.jpg;maxHeight=640;maxWidth=550",
     "Price": "$6.99",
-    "Review": 4.1,
+    "Review": 4,
     "Index": 6
   },
   {
@@ -662,7 +662,7 @@ var data = [
     "Description": "Logitech Wireless Keyboard and Mouse Combo",
     "Link": "https://i5.walmartimages.com/asr/763745ac-1dd5-46ae-8010-702ae2dc0f04_1.db66e9b367a099854bc01fac2adb21db.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF",
     "Price": "$19.98",
-    "Review": 4.2,
+    "Review": 4,
     "Index": 2
   },
   {
@@ -689,7 +689,7 @@ var data = [
     "Description": "Razer Ornata Chroma Keyboard",
     "Link": "https://slimages.macysassets.com/is/image/MCY/products/1/optimized/10524691_fpx.tif?op_sharpen=1&wid=1230&hei=1500&fit=fit,1&$filterxlrg$",
     "Price": "$99.99",
-    "Review": "Null",
+    "Review": 4.5,
     "Index": 5
   },
   {
@@ -698,7 +698,7 @@ var data = [
     "Description": "Logitech - MK540 Advanced Wireless Keyboard and Mouse Bundle - Black",
     "Link": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6215/6215118_sd.jpg;maxHeight=640;maxWidth=550",
     "Price": "$39.99",
-    "Review": 4.7,
+    "Review": 5,
     "Index": 6
   },
   {
@@ -725,7 +725,7 @@ var data = [
     "Description": "PlayStation® 4 1TB Console",
     "Link": "https://target.scene7.com/is/image/Target/GUEST_46217070-069f-4de3-9ac3-abc3ea6cdbc5?wid=1400",
     "Price": "$299.99",
-    "Review": 4.8,
+    "Review": 5,
     "Index": 3
   },
   {
@@ -752,7 +752,7 @@ var data = [
     "Description": "Sony - PlayStation 4 1TB Console - Black",
     "Link": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5850/5850905_sd.jpg;maxHeight=640;maxWidth=550",
     "Price": "$299.99",
-    "Review": 4.8,
+    "Review": 5,
     "Index": 6
   },
   {
@@ -779,7 +779,7 @@ var data = [
     "Description": "HyperX FURY S Speed Edition Pro Gaming Mouse Pad - Small",
     "Link": "https://target.scene7.com/is/image/Target/GUEST_d07f742f-3f43-41e6-b963-920b03df8979?wid=488&hei=488&fmt=webp",
     "Price": "$8.29",
-    "Review": "Null",
+    "Review": 2.5,
     "Index": 3
   },
   {
@@ -797,7 +797,7 @@ var data = [
     "Description": "Russell & Hazel Leather & Brass Mouse Pad",
     "Link": "https://slimages.macysassets.com/is/image/MCY/products/0/optimized/9558620_fpx.tif?op_sharpen=1&wid=500&hei=613&fit=fit,1&$filtersm$",
     "Price": "$44.80",
-    "Review": "Null",
+    "Review": 5,
     "Index": 5
   },
   {
@@ -806,7 +806,7 @@ var data = [
     "Description": "Logitech - G440 Gaming Mouse Pad - Black",
     "Link": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5204/5204601_sd.jpg;maxHeight=640;maxWidth=550",
     "Price": "$29.99",
-    "Review": 4.6,
+    "Review": 4.5,
     "Index": 6
   }
 ]

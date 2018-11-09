@@ -77,7 +77,6 @@ body {
 #search-submit {
     background-image: url(./assets/imgs/search-glass.png); 
     border: none; 
-
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;

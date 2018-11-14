@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <title>Store</title>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Store</title>
 
-	    <base href="./">
-	    <link rel="stylesheet" type="text/css" href="./styleExplore.css">
-	</head>
+        <base href="./">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./styleExplore.css">
+    </head>
 
-	<body>
-		<header>
+    <body>
+        <header>
             <nav class="navigator">
 
                 <a href="./index.html">
@@ -19,7 +20,7 @@
 
                 <form class="search" action="./explore.html" method="get">
                     <input type="text" class="miniSearchBar" name="query">
-                    
+
                     <input type="submit" id="search-submit" value="">
                 </form>
 
@@ -27,8 +28,47 @@
                 <a href="./saved.html"><img src="./assets/imgs/heart-nofill.png" id="heart"></a>
             </nav>
         </header>
-		<main>
-			<p class="Explore">FAQ</p>
-		</main>
-	</body>
+        <main>
+          <div class="jumbotron">
+            <div class="row">
+              <div class="col-md-7">
+                <h1>FAQ </h1>
+                <p> 1. Where are the items on LineUp from? </p>
+								<p>We gathered items for comparisons from some of the most popular online shopping sites. Currently, we have Amazon, Walmart, Target, eBay, Macy's, and Best Buy.
+								</p>
+								<p> 2. Do I pay through LineUp for the items? </p>
+								<p> No, LineUp only provides recommendation of the best item to purchase based on our data analysis. All transactions will be done on Amazon, Walmart, Target, eBay, Macy's, or Best Buy.
+								</p>
+								<p> 3. What is the data analysis approach? </p>
+
+								<p>We use a unique approach that takes into account prices of items. In addition, reviews and comments will be utilized in the future versions.
+								</p>
+								<p>4. How can I contact LineUp?</p>
+								<p>We have our contact information under our Contact Us page.</p>
+
+              </div>
+              <div class="col-md-5">
+                <a href=""><img src="./assets/imgs/questionMark.png" id="questionMark"></a>
+              </div>
+            </div>
+
+
+          </div>
+        </main>
+
+        <footer>
+            <ul id="footerMenu">
+                <li class="footerText" id="aboutUs"><a href="./about.html">About Us</a></li>
+                <li class="footerText" id="FAQ"><a href="./faq.html">FAQ</a></li>
+                <li class="footerText" id="contact"><a href="contact.html">Contact Us</a></li>
+                <li class="footerText">
+                <label id="location">Location:</label>
+            <select id="locationMenu">
+                <option value="US">United States - USD$</option>
+                <option value="MX">Mexico - MXN$</option>
+                <option value="CA">Canada - CAD$</option>
+            </select></li>
+            </ul>
+        </footer>
+    </body>
 </html>

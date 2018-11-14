@@ -6,8 +6,10 @@
         <title>Store</title>
 
         <base href="./">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="./styleExplore.css">
     </head>
+
 
     <body>
         <header>
@@ -19,7 +21,7 @@
 
                 <form class="search" action="./explore.html" method="get">
                     <input type="text" class="miniSearchBar" name="query">
-                    
+
                     <input type="submit" id="search-submit" value="">
                 </form>
 
@@ -28,7 +30,59 @@
             </nav>
         </header>
         <main>
-            <p class="Explore">About Us</p>
+          <div class="jumbotron">
+            <div class="row">
+              <div class="col-md-7">
+                <h1>About Us </h1>
+                <p>
+                  LineUp aims to provide users an easy and unique experience to find the perfect item when shopping online. We offer a data analytical approach to compare and contrast items from most shopped online websites. We “line up” the items here to provide useful recommendation for the users. We believe that online shopping experience should be enjoyable and convenient.
+                </p>
+              </div>
+              <div class="col-md-5">
+                <a href=""><img src="./assets/imgs/data.png" id="dataIcon"></a>
+              </div>
+            </div>
+
+            <div class='jumbotron'>
+              <div class='row'>
+
+                <div class='col-md-2'>
+                  <a href=""><img src="./assets/imgs/amazon.png" id="amazon"></a>
+                </div>
+                <div class='col-md-2'>
+                  <a href=""><img src="./assets/imgs/walmart.png" id="companyIcon"></a>
+                </div>
+                <div class='col-md-2'>
+                  <a href=""><img src="./assets/imgs/ebay.png" id="companyIcon"></a>
+                </div>
+                <div class='col-md-2'>
+                  <a href=""><img src="./assets/imgs/Target.png" id="companyIcon"></a>
+                </div>
+                <div class='col-md-2'>
+                  <a href=""><img src="./assets/imgs/macys.png" id="companyIcon"></a>
+                </div>
+                <div class='col-md-2'>
+                  <a href=""><img src="./assets/imgs/bestbuy.png" id="bestbuy"></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </main>
+
+        <footer>
+            <ul id="footerMenu">
+                <li class="footerText" id="aboutUs"><a href="./about.html">About Us</a></li>
+                <li class="footerText" id="FAQ"><a href="./faq.html">FAQ</a></li>
+                <li class="footerText" id="contact"><a href="contact.html">Contact Us</a></li>
+                <li class="footerText">
+                <label id="location">Location:</label>
+            <select id="locationMenu">
+                <option value="US">United States - USD$</option>
+                <option value="MX">Mexico - MXN$</option>
+                <option value="CA">Canada - CAD$</option>
+            </select></li>
+            </ul>
+        </footer>
     </body>
 </html>

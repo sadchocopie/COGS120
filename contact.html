@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <title>Store</title>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Store</title>
 
-	    <base href="./">
-	    <link rel="stylesheet" type="text/css" href="./styleExplore.css">
-	</head>
+        <base href="./">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./styleExplore.css">
+    </head>
 
-	<body>
-		<header>
+    <body>
+        <header>
             <nav class="navigator">
 
                 <a href="./index.html">
@@ -19,7 +20,7 @@
 
                 <form class="search" action="./explore.html" method="get">
                     <input type="text" class="miniSearchBar" name="query">
-                    
+
                     <input type="submit" id="search-submit" value="">
                 </form>
 
@@ -27,8 +28,40 @@
                 <a href="./saved.html"><img src="./assets/imgs/heart-nofill.png" id="heart"></a>
             </nav>
         </header>
-		<main>
-			<p class="Explore">Contact Us</p>
-		</main>
-	</body>
+        <main>
+          <div class="jumbotron">
+            <div class="row">
+              <div class="col-md-7">
+
+                <h1>Contact Us </h1>
+                <p> We are here to help! We are always here to help support you in every way we can as you shop online! Please email, call, or visit us if you have any questions, feedback, or concerns </p>
+								<p> <b> Address: </b>9500 Gilman Drive La Jolla, CA 92093 </p>
+								<p><b> Telephone: </b> (111) 111-1111</p>
+								<p> <b> Email: </b> contactus@lineup.com</p>
+
+              </div>
+              <div class="col-md-5">
+                <a href=""><img src="./assets/imgs/contact.png" id="contact"></a>
+              </div>
+            </div>
+
+
+          </div>
+        </main>
+
+        <footer>
+            <ul id="footerMenu">
+                <li class="footerText" id="aboutUs"><a href="./about.html">About Us</a></li>
+                <li class="footerText" id="FAQ"><a href="./faq.html">FAQ</a></li>
+                <li class="footerText" id="contact"><a href="contact.html">Contact Us</a></li>
+                <li class="footerText">
+                <label id="location">Location:</label>
+            <select id="locationMenu">
+                <option value="US">United States - USD$</option>
+                <option value="MX">Mexico - MXN$</option>
+                <option value="CA">Canada - CAD$</option>
+            </select></li>
+            </ul>
+        </footer>
+    </body>
 </html>

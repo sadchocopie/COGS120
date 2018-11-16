@@ -54,7 +54,7 @@
 
             			<div class="bottomBox">
             				<p class="resultsText" id="title">National Tree 7 Foot Dunhill Fir Tree (DUH-70)</p>
-            				<img src="./assets/imgs/heart-nofill.png" onclick="updateSaved(this.id)" class="itemHeart" id="itemHeart1">
+            				<img src="./assets/imgs/Instagram-Heart-PNG-Red.png" onclick="unlike(this.id)" class="itemHeart" id="itemHeart1">
             				<p class="resultsText" id="textPrice">Price</p>
             				<p class="resultsText" id="itemPrice">$154</p>
             				<p class="resultsText" id="ratingText">Ratings</p>
@@ -71,7 +71,7 @@
 
             			<div class="bottomBox">
             				<p class="resultsText" id="title">Belham Living 7.5ft Pre-Lit Gold Dusted Artificial Christmas Tree with Clear Lights- Green</p>
-            				<img src="./assets/imgs/heart-nofill.png" onclick="updateSaved(this.id)" class="itemHeart" id="itemHeart2">
+            				<img src="./assets/imgs/Instagram-Heart-PNG-Red.png" onclick="unlike(this.id)" class="itemHeart" id="itemHeart2">
             				<p class="resultsText" id="textPrice">Price</p>
             				<p class="resultsText" id="itemPrice">$190</p>
             				<p class="resultsText" id="ratingText">Ratings</p>
@@ -88,7 +88,7 @@
 
             			<div class="bottomBox">
             				<p class="resultsText" id="title">7.5ft Prelit Artificial Christmas Tree Virginia Pine Clear Lights - Wondershop%u2122</p>
-            				<img src="./assets/imgs/heart-nofill.png" onclick="updateSaved(this.id)" class="itemHeart" id="itemHeart3">
+            				<img src="./assets/imgs/Instagram-Heart-PNG-Red.png" onclick="unlike(this.id)" class="itemHeart" id="itemHeart3">
             				<p class="resultsText" id="textPrice">Price</p>
             				<p class="resultsText" id="itemPrice">$240</p>
             				<p class="resultsText" id="ratingText">Ratings</p>
@@ -107,7 +107,19 @@
         <script src="https://code.jquery.com/jquery.js"></script>
         <script src="js/handlebars-v4.0.12.js"></script>
         <script src="js/database.js"></script>
-        </main>
+        <script> 
+              function unlike(clicked_id) {
+
+                document.getElementById(clicked_id).src = "./assets/imgs/heart-nofill.png";
+                console.log(document.getElementById(clicked_id).parentElement.parentElement.id);
+                var key = document.getElementById(clicked_id).parentElement.parentElement.id;
+                delete saved[key];
+                console.log(saved);
+                  
+                  var key = document.getElementById(clicked_id).parentElement.parentElement.id;
+                  document.getElementById(key).style.display="none";
+            };
+        </script>>
         
         
         

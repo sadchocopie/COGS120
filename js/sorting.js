@@ -78,7 +78,6 @@ document.getElementById('sortingMenuId').addEventListener('change', function (e)
         });
     }
     document.getElementsByClassName("grid")[0].innerHTML = '';
-    console.log(boxArray);
 
     for(var i = 0; i < boxArray.length; i++) {
         document.getElementsByClassName("grid")[0].appendChild(boxArray[i].parent);

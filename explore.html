@@ -8,7 +8,6 @@
         <base href="./">
         <link rel="stylesheet" type="text/css" href="./styleExplore.css">
         <script type="text/javascript" src="database.json"></script>
-        <script type="text/javascript" src="./js/saved.js">
          </script>
     </head>
     <body>
@@ -77,6 +76,23 @@
 
         <script>
 
+            window.onload = function() {
+                saved = {};
+
+                if(localStorage.getItem('saved') === null) {
+                    localStorage.setItem('saved', saved);
+                } else {
+
+                    // get current localStorage list
+                    var localString = localStorage.getItem('saved');
+
+                    // turn list into array of strings
+                    var localArray = JSON.parse(localString);
+
+                    saved = localArray;
+                }
+            }
+
             function updateSaved (clicked_id) {
                 return (document.getElementById(clicked_id).tog = !document.getElementById(clicked_id).tog) ? like(clicked_id) : unlike(clicked_id);
                 console.log("works?");
@@ -86,14 +102,13 @@
             function like(clicked_id) {
 
                 document.getElementById(clicked_id).src = "./assets/imgs/Instagram-Heart-PNG-Red.png";
-                console.log(document.getElementById(clicked_id).parentElement.parentElement.id);
+                
 
                 var key = document.getElementById(clicked_id).parentElement.parentElement.id;
-                var value = document.getElementById(clicked_id).id;
-                var obj = {};
-                obj[key] = value;
-                saved[key] = value; 
-                console.log(saved);
+                var value = document.getElementById(clicked_id).parentElement.parentElement.innerHTML;
+                saved[key] = value;
+                localStorage.setItem("saved", JSON.stringify(saved));
+                console.log(localStorage);
             };
 
 
@@ -103,6 +118,7 @@
                 console.log(document.getElementById(clicked_id).parentElement.parentElement.id);
                 var key = document.getElementById(clicked_id).parentElement.parentElement.id;
                 delete saved[key];
+                localStorage.setItem("saved", JSON.stringify(saved));
                 console.log(saved);
             };
         </script>
@@ -118,7 +134,6 @@
 
         		var queryParams = new URLSearchParams(window.location.search);
         		var projectTitle = queryParams.get("query");
-        		console.log(projectTitle);
 
         		for (var i = 0; i < local_data.length; i++) {
         		  var curData = local_data[i];

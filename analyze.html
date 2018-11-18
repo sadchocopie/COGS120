@@ -60,15 +60,15 @@
             }
 
 
-            function unlike(clicked_id) {
-
+            function updateSaved (clicked_id) {
                 document.getElementById(clicked_id).src = "./assets/imgs/heart-nofill.png";
-                console.log(document.getElementById(clicked_id).parentElement.parentElement.id);
+                
                 var key = document.getElementById(clicked_id).parentElement.parentElement.id;
-                
-               
-                document.getElementById(key).remove();
-                
+                document.getElementById(key).outerHTML = '';
+
+                delete savedArray[key];
+                localStorage.setItem("saved", JSON.stringify(savedArray));
+                console.log(localStorage);
             };
 
 

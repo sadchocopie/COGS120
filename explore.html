@@ -101,6 +101,21 @@
 
             function like(clicked_id) {
 
+                let queryParams = new URLSearchParams(window.location.search);
+                let projectTitle = queryParams.get("query");
+
+                if(localStorage.getItem('query') != projectTitle) {
+                    var s = confirm("This is a different type of item than the one in your list. \
+                        Saving this item will clear your list. Proceed?");
+
+                    if(s === true) {
+                        localStorage.setItem('query', projectTitle);
+
+                    } else if(s == false) {
+                        return;
+                    }
+                }
+
                 document.getElementById(clicked_id).src = "./assets/imgs/Instagram-Heart-PNG-Red.png";
                 
 
@@ -134,6 +149,10 @@
 
         		var queryParams = new URLSearchParams(window.location.search);
         		var projectTitle = queryParams.get("query");
+
+                if(localStorage.getItem('query') == null) {
+                    localStorage.setItem('query', projectTitle);
+                }
 
         		for (var i = 0; i < local_data.length; i++) {
         		  var curData = local_data[i];

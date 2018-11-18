@@ -91,6 +91,8 @@
 
                     saved = localArray;
                 }
+
+                console.log(saved);
             }
 
             function updateSaved (clicked_id) {
@@ -109,6 +111,8 @@
                         Saving this item will clear your list. Proceed?");
 
                     if(s === true) {
+                        localStorage.clear();
+                        localStorage.setItem('saved', '');
                         localStorage.setItem('query', projectTitle);
 
                     } else if(s == false) {

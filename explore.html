@@ -31,7 +31,7 @@
             <div class="sortRect">
                 <p class="Sort-By">Sort By</p>
 
-                <select class="sortMenu">
+                <select class="sortMenu" id="sortingMenuId">
                     <option value="Price-lowToHigh">Price: low to high</option>
                     <option value="Price-highToLow">Price: high to low</option>
                     <option value="Rating">Rating</option>
@@ -105,6 +105,7 @@
             };
         </script>
 
+        <!-- Fill template -->
         <script>
         	$(document).ready(function() {
 
@@ -132,5 +133,8 @@
         		}
         	});
         </script>
+
+        <!-- Sorting code -->
+        <script type="text/javascript" src="./js/sorting.js"></script>
     </body>
 </html>

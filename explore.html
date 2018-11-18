@@ -92,7 +92,24 @@
                     saved = localArray;
                 }
 
-                console.log(saved);
+                var allResults = document.getElementsByClassName('itemBox');
+                var temp = saved;
+
+                // adds red heart pic if search results are already saved
+                for(var key in saved) {
+
+                  let box = saved[key];
+
+                  var boxTitle = box.match(new RegExp("title\">" + "(.*)" + "</p>"))[1];
+
+                  for(var i = 0; i < allResults.length; i++) {
+
+                        var resultsTitle = allResults[i].innerHTML.match(new RegExp("title\">" + "(.*)" + "</p>"))[1];
+                      if(boxTitle === resultsTitle) {
+                        allResults[i].getElementsByClassName('bottomBox')[0].children[1].src = "./assets/imgs/Instagram-Heart-PNG-Red.png";
+                      }
+                  }
+                }
             }
 
             function updateSaved (clicked_id) {

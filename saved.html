@@ -86,7 +86,11 @@
                 document.getElementById(key).outerHTML = '';
 
                 delete savedArray[key];
+
+                console.log(savedArray);
+
                 localStorage.setItem("saved", JSON.stringify(savedArray));
+                console.log(localStorage);
             };
 
         </script>

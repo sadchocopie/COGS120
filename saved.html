@@ -58,6 +58,13 @@
                 </div>
             </div>
 
+            <p id="noItemsText" style="position: absolute; top: 50%; left: 35%; font-family: Helvetica;
+    font-size: 36px;
+    font-weight: bold;
+    z-index: 1;
+    color: black;
+    background: pink ">No items currently saved.</p>
+
 
             <div class="grid" id="templatedResult"></div>
 
@@ -93,30 +100,30 @@
             // Show saved items
             var savedArray = JSON.parse(localStorage.saved);
 
-            let index = 1;
-
             for(var key in savedArray) {
                 let box = savedArray[key];
                 var markup = document.createElement("div");
                 markup.innerHTML = box;
                 markup.className = "itemBox";
-                markup.id = `itemBox` + index;
+                markup.id = key;
                 document.getElementById("templatedResult").appendChild(markup);
-                index++;
+            }
+
+            if(Object.keys(savedArray).length === 0) {
+                document.getElementById('noItemsText').style.display = "";
             }
 
             function updateSaved (clicked_id) {
                 document.getElementById(clicked_id).src = "./assets/imgs/heart-nofill.png";
-
                 var key = document.getElementById(clicked_id).parentElement.parentElement.id;
                 document.getElementById(key).outerHTML = '';
 
                 delete savedArray[key];
-
-                console.log(savedArray);
-
                 localStorage.setItem("saved", JSON.stringify(savedArray));
-                console.log(localStorage);
+
+                if(Object.keys(savedArray).length === 0) {
+                    localStorage.setItem('query', "");
+                }
             };
 
 

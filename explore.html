@@ -140,7 +140,7 @@
                 let queryParams = new URLSearchParams(window.location.search);
                 let projectTitle = queryParams.get("query");
 
-                if(localStorage.getItem('query') != projectTitle) {
+                if(localStorage.getItem('query') != projectTitle && localStorage.getItem('query') === "" ) {
                     var s = confirm("This is a different type of item than the one in your list. \
                         Saving this item will clear your list. Proceed?");
 

@@ -17,14 +17,14 @@
                     <img src="./assets/imgs/logo.png" href="./index.html" id="logoPicture">
                 </a>
 
-                <form class="search" action="./explore.html" method="get">
+                <form class="search" action="./explore2.html" method="get">
                     <input type="text" class="miniSearchBar" name="query">
                     
                     <input type="submit" id="search-submit" value="">
                 </form>
 
                 <a href="./account.html"><img src="./assets/imgs/kirby.png" id="accountIcon"></a>
-                <a href="./saved.html"><img src="./assets/imgs/heart-nofill.png" id="heart"></a>
+                <a href="./saved2.html"><img src="./assets/imgs/wishlist.jpg" id="heart"></a>
             </nav>
             <div class="sortRect">
                 <p class="Sort-By">Sort By</p>
@@ -51,7 +51,7 @@
 
             			<div class="bottomBox">
             				<p class="resultsText" id="title"><a href="{{WebsiteLink}}">{{Description}}</a></p>
-            				<img src="./assets/imgs/heart-nofill.png" onclick="updateSaved(this.id)" class="itemHeart" id="itemHeart{{Index}}">
+            				<img src="./assets/imgs/plus.png" onclick="updateSaved(this.id)" class="itemHeart" id="itemHeart{{Index}}">
             				<p class="resultsText" id="textPrice">Price</p>
             				<p class="resultsText" id="itemPrice">{{Price}}</p>
             				<p class="resultsText" id="ratingText">Ratings</p>
@@ -120,7 +120,7 @@
 
                         var resultsTitle = allResults[i].innerHTML.match(new RegExp("title\">" + "(.*)" + "</p>"))[1];
                       if(boxTitle === resultsTitle) {
-                        allResults[i].getElementsByClassName('bottomBox')[0].children[1].src = "./assets/imgs/Instagram-Heart-PNG-Red.png";
+                        allResults[i].getElementsByClassName('bottomBox')[0].children[1].src = "./assets/imgs/neg.png";
                       }
                   }
                 }
@@ -152,7 +152,7 @@
                     }
                 }
 
-                document.getElementById(clicked_id).src = "./assets/imgs/Instagram-Heart-PNG-Red.png";
+                document.getElementById(clicked_id).src = "./assets/imgs/neg.png";
                 
 
                 var key = document.getElementById(clicked_id).parentElement.parentElement.id;
@@ -165,7 +165,7 @@
 
             function unlike(clicked_id) {
 
-                document.getElementById(clicked_id).src = "./assets/imgs/heart-nofill.png";
+                document.getElementById(clicked_id).src = "./assets/imgs/plus.png";
                 console.log(document.getElementById(clicked_id).parentElement.parentElement.id);
                 var key = document.getElementById(clicked_id).parentElement.parentElement.id;
                 delete saved[key];

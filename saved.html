@@ -18,10 +18,10 @@
 
                 <form class="search" action="./explore.html" method="get">
                     <input type="text" class="miniSearchBar" name="query">
-                    
+
                     <input type="submit" id="search-submit" value="">
                 </form>
-                
+
                 <a href="./account.html"><img src="./assets/imgs/userImg.jpg" id="accountIcon"></a>
                 <a href="./saved.html"><img src="./assets/imgs/Instagram-Heart-PNG-Red.png" id="heart"></a>
             </nav>
@@ -40,16 +40,18 @@
             <div class="pageHeader">
                 <button type ="button" id="backExplore" onclick="history.back(-1)"><u>Back to Explore</u></button>
                 <button type="button" id="savedText">Saved</button>
+
                 <button type="button" id="analyzeText"><a href="./analyze.html">Analyze</a></button>
+                <button onclick="clearStorage()" id="clearList">Clear list</button>
+                <br>
             </div>
 
 
             <div class="grid" id="templatedResult"></div>
 
-            <button onclick="clearStorage()">Clear list</button>
 
         </main>
-        
+
         <footer>
             <ul id="footerMenu">
                 <li class="footerText" id="aboutUs"><a href="./about.html">About Us</a></li>
@@ -65,7 +67,7 @@
             </ul>
         </footer>
 
-        
+
         <!-- Sorting code -->
         <script type="text/javascript" src="./js/sorting.js"></script>
         <script>
@@ -96,7 +98,7 @@
 
             function updateSaved (clicked_id) {
                 document.getElementById(clicked_id).src = "./assets/imgs/heart-nofill.png";
-                
+
                 var key = document.getElementById(clicked_id).parentElement.parentElement.id;
                 document.getElementById(key).outerHTML = '';
 

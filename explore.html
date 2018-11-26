@@ -124,6 +124,9 @@
                       }
                   }
                 }
+
+                document.getElementById('sortingMenuId').selectedIndex = 0;
+                document.getElementById('sortingMenuId').dispatchEvent(new Event('change'));
             }
 
             function updateSaved (clicked_id) {

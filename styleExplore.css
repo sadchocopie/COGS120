@@ -378,7 +378,7 @@ input, select, textarea {
 
 footer {
     text-align: center;
-    position:fixed;
+    position:relative;
     bottom: 0;
     width: 100%;
     padding-top: 0.5px;
@@ -421,7 +421,7 @@ li {
 }
 
 #locationMenu {
-    position: relative;
+    position: absolute;
     width: 280px;
     height: 25px;
     font-family: "Helvetica";

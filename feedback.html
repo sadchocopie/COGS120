@@ -30,34 +30,20 @@
         <main>
             <p class="account">Account</p>
             <div class="accountHeader">
-                <span id="overview"><a href="./account.html"  class="current">Overview</a></span>
-                <span id="personalDetail"><a href="/personalDetail.html">Personal Detail</a></span>
-                <span id="feedback"><a href="./feedback.html">Feedback</a></span>
+                <span id="overview"><a href="./account.html"  >Overview</a></span>
+                <span id="personalDetail"><a href="./personalDetail.html">Personal Detail</a></span>
+                <span id="feedback"><a href="./feedback.html" class="current">Feedback</a></span>
                 <span id="more"><a href="">More</a></span>
 
             </div>
 
-            <div class="grid-container">
-                <div class="item1">
-                    <h4>Hello!</h4>
-                    <p>Great to see you! 
-                        Here’s your personal dashboard, where you can update your personal details, settings and give us feedback.</p>
-                </div>
+            <div class="feedback">
+                <h4>Feedback</h4>
+                <p>Tell us about how we can improve your LineUp experience!</p>
+                <textarea placeholder="Describe yourself here...">
 
-                <div class="item2">
-                <h4>Personal Detail</h4>
-                    <p>Email: cogs120@ucsd.edu</p>
-                    <p>Phone: (858) 900 - 6666</p>
-                    <p>Address: -- </p>
-
-                    <button type="button" id="personalDetailMore" onclick="location.href='./personalDetail.html'">More</button>
-                </div>
-
-                <div class="item3">
-                <h4>Referral</h4>
-                    <p>Tell a friend about us!</p>
-                <button type="button" id="refer">Refer</button></div>  
-
+                </textarea>
+                <button type="button" id="feedbackSend">Send</button>
             </div>
 
         </main>

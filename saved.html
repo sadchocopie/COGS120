@@ -46,14 +46,15 @@
                 <br>
             </div>
 
-
             <div id="myModal" class="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
                     <span class="close">&times;</span>
                     <p>Clear all items in Saved?</p>
-                    <button type="button" id="clearStorage" onlick="clearStorage()">Yes</button>
-                    <button type="button" id="cancel">Cancel</button>
+                    <div>
+                        <button type="button" id="yes" onlick="clearStorage()">Yes</button>
+                        <button type="button" id="cancel">Cancel</button>
+                    </div>
                 </div>
             </div>
 
@@ -134,7 +135,7 @@
                 var span = document.getElementsByClassName("close")[0];
 
                 // When the user clicks on Yes, clearStorage
-                document.getElementById("clearStorage").onclick = function() {
+                document.getElementById("yes").onclick = function() {
                     clearStorage();
                     modal.style.display = "none";
                 }

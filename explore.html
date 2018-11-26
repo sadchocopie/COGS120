@@ -8,7 +8,6 @@
         <base href="./">
         <link rel="stylesheet" type="text/css" href="./styleExplore.css">
         <script type="text/javascript" src="database.json"></script>
-         </script>
     </head>
     <body>
         <header>
@@ -66,6 +65,21 @@
             <div class=grid>
             </div>  
         </main>
+        
+        <footer>
+            <ul id="footerMenu">
+                <li class="footerText" id="aboutUs"><a href="./about.html">About Us</a></li>
+                <li class="footerText" id="FAQ"><a href="./faq.html">FAQ</a></li>
+                <li class="footerText" id="contact"><a href="contact.html">Contact Us</a></li>
+                <li class="footerText">
+                    <label id="location">Location:</label>
+                    <select id="locationMenu">
+                        <option value="US">United States - USD$</option>
+                        <option value="MX">Mexico - MXN$</option>
+                        <option value="CA">Canada - CAD$</option>
+                    </select></li>
+            </ul>
+        </footer>
 
         <script>
         	var local_data = data;

@@ -111,7 +111,11 @@
 
             if(Object.keys(savedArray).length === 0) {
                 document.getElementById('noItemsText').style.display = "";
+            } else {
+                document.getElementById('noItemsText').style.display = 'none';
             }
+
+
 
             function updateSaved (clicked_id) {
                 document.getElementById(clicked_id).src = "./assets/imgs/heart-nofill.png";
@@ -123,6 +127,7 @@
 
                 if(Object.keys(savedArray).length === 0) {
                     localStorage.setItem('query', "");
+                    document.getElementById('noItemsText').style.display = "";
                 }
             };
 

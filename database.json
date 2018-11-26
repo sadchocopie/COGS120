@@ -46,7 +46,7 @@ var data = [
     "Link": "https://slimages.macysassets.com/is/image/MCY/products/0/optimized/10973450_fpx.tif?op_sharpen=1&wid=1230&hei=1500&fit=fit,1&$filterxlrg$",
     "Price": "$209.99",
     "WebsiteLink": "https://www.macys.com/shop/product/national-tree-company-7-mixed-pine-tree?ID=7049915&CategoryID=30599",
-    "Review": "Null",
+    "Review": 5,
     "Index": 5
   },
   {
@@ -96,7 +96,7 @@ var data = [
     "Link": "https://i.ebayimg.com/images/g/Bo4AAOSwVuNbDwlO/s-l1600.png",
     "Price": "$9.25",
     "WebsiteLink": "https://www.ebay.com/itm/Polar-Insulated-Water-Bottle-Bike-24oz-White-Blue-Red-USA-Flag-Assorted-Patterns/291177112921?hash=item43cb822559:g:~acAAOSwsN9XDWEj:sc:USPSFirstClass!92122!US!-1:rk:1:pf:0&var=590324755591",
-    "Review": "Null",
+    "Review": 2.5,
     "Index": 4
   },
   {
@@ -106,7 +106,7 @@ var data = [
     "Link": "https://slimages.macysassets.com/is/image/MCY/products/1/optimized/10112171_fpx.tif?op_sharpen=1&wid=500&hei=613&fit=fit,1&$filtersm$",
     "Price": "$15.99",
     "WebsiteLink": "https://www.macys.com/shop/product/goodful-16-oz.-press-go-iced-tea-tumbler-created-for-macys?ID=6545050&CategoryID=65938#fn=sp%3D1%26spc%3D1%26ruleId%3D78%26kws%3D16-Oz.%20Press%20%26%20Go%20Iced%20Tea%20Tumbler%2C%20Created%20for%20Macy's%26searchPass%3DlongPhraseMatch%26slotId%3D1",
-    "Review": "Null",
+    "Review": 3.5,
     "Index": 5
   },
   {
@@ -376,7 +376,7 @@ var data = [
     "Link": "https://images-na.ssl-images-amazon.com/images/I/61Tfoa-9b2L._SL1125_.jpg",
     "Price": "$7.12",
     "WebsiteLink": "https://www.amazon.com/LOreal-Paris-Voluminous-Paradise-Waterproof/dp/B06XDQ84NF/ref=sr_1_1_a_it?ie=UTF8&qid=1542526682&sr=8-1&keywords=L%27Oreal+Paris+Makeup+Voluminous+Lash+Paradise+Waterproof+Mascara%2C+Blackest+Black%2C+0.25+fl.+oz.",
-    "Review": 4,
+    "Review": 2,
     "Index": 1
   },
   {
@@ -406,7 +406,7 @@ var data = [
     "Link": "https://i.ebayimg.com/images/g/jugAAOSwoUZbypAM/s-l1600.jpg",
     "Price": "$9.85",
     "WebsiteLink": "https://www.ebay.com/itm/BENEFIT-Roller-Lash-Mascara-Black-FULL-SIZE-NEW-8-5g-3-oz-USA/183494418800?hash=item2ab91ea170:g:jugAAOSwoUZbypAM:rk:1:pf:0",
-    "Review": null,
+    "Review": 3.5,
     "Index": 4
   },
   {
@@ -566,7 +566,7 @@ var data = [
     "Link": "https://i5.walmartimages.com/asr/86da78ed-e9a5-46bd-98d3-c20aa57d960a_1.01d6b1c71655393a0ea797a69577f44d.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF",
     "Price": "$6.94",
     "WebsiteLink": "https://www.walmart.com/ip/Maybelline-Eye-Studio-Master-Drama-Cream-Pencil-Eyeliner/16929080",
-    "Review": "Null",
+    "Review": 3.5,
     "Index": 2
   },
   {
@@ -596,7 +596,7 @@ var data = [
     "Link": "https://slimages.macysassets.com/is/image/MCY/products/8/optimized/10390458_fpx.tif?op_sharpen=1&wid=1230&hei=1500&fit=fit,1&$filterxlrg$",
     "Price": "$22",
     "WebsiteLink": "https://www.macys.com/shop/product/mac-shiny-pretty-things-dazzleliner-limited-edition?ID=7007627&CategoryID=30077&swatchColor=A%20Little%20Moonlight%20-%20Black%20with%20silver%20and%20gold%20pearl&swatchColor=A%20Little%20Moonlight%20-%20Black%20with%20silver%20and%20gold%20pearl#fn=sp%3D1%26spc%3D17%26ruleId%3D78%26kws%3DMAC%20Shiny%20Pretty%20Things%20Dazzleliner%2C%200.06%20fl.%20oz.%20-%20Limited%20Edition%26searchPass%3DtextMatch%26slotId%3D1",
-    "Review": "Null",
+    "Review": 5,
     "Index": 5
   },
   {
@@ -626,7 +626,7 @@ var data = [
     "Link": "https://i5.walmartimages.com/asr/38e390ac-0582-4c17-a961-2ea0e8323e1b_1.c15e164dcedddb9a6229ca1ffeae9dc9.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF",
     "Price": "$10.00",
     "WebsiteLink": "https://www.walmart.com/ip/Women-s-Messy-Bun-Ponytail-CC-Beanie/467765377",
-    "Review": null,
+    "Review": 4.5,
     "Index": 2
   },
   {
@@ -686,7 +686,7 @@ var data = [
     "Link": "https://i5.walmartimages.com/asr/54fb4978-7765-4aa3-b96a-c1726e57b314_1.c8e01017a645d98054db458cad526090.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF",
     "Price": "$9.25",
     "WebsiteLink": "https://www.walmart.com/ip/Men-s-Crew-Socks-10-Pack/121506339",
-    "Review": null,
+    "Review": 3.5,
     "Index": 2
   },
   {
@@ -776,7 +776,7 @@ var data = [
     "Link": "https://slimages.macysassets.com/is/image/MCY/products/1/optimized/10524691_fpx.tif?op_sharpen=1&wid=1230&hei=1500&fit=fit,1&$filterxlrg$",
     "Price": "$99.99",
     "WebsiteLink": "https://www.macys.com/shop/product/razer-ornata-chroma-keyboard?ID=7194732&CategoryID=22672#fn=sp%3D1%26spc%3D1%26ruleId%3D78%26kws%3DRazer%20Ornata%20Chroma%20Keyboard%26searchPass%3DallMultiMatchWithSpelling%26slotId%3D1",
-    "Review": "Null",
+    "Review": 4.5,
     "Index": 5
   },
   {
@@ -876,7 +876,7 @@ var data = [
     "Link": "https://target.scene7.com/is/image/Target/GUEST_d07f742f-3f43-41e6-b963-920b03df8979?wid=488&hei=488&fmt=webp",
     "Price": "$8.29",
     "WebsiteLink": "https://www.target.com/p/hyperx-fury-s-speed-edition-pro-gaming-mouse-pad-small/-/A-53733743",
-    "Review": "Null",
+    "Review": 3.5,
     "Index": 3
   },
   {
@@ -896,7 +896,7 @@ var data = [
     "Link": "https://slimages.macysassets.com/is/image/MCY/products/0/optimized/9558620_fpx.tif?op_sharpen=1&wid=500&hei=613&fit=fit,1&$filtersm$",
     "Price": "$44.80",
     "WebsiteLink": "https://www.macys.com/shop/product/russell-hazel-leather-brass-mouse-pad?ID=6194017&CategoryID=51662",
-    "Review": "Null",
+    "Review": 4,
     "Index": 5
   },
   {

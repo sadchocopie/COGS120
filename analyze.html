@@ -43,7 +43,7 @@
             <div class="pageHeader">
                 <button type ="button" id="backExplore" onclick="history.go(-2)"><u>Back to Explore</u></button>
                 <button type="button" id="savedText">Saved</button>
-                <button type="button" id="analyzeText"><a href="./analyze.html">Analyze</a></button>
+                <button type="button" id="analyzeText" onclick="analyze()"><a>Analyze</a></button>
             </div>
 
             
@@ -60,20 +60,6 @@
             }
 
 
-            function updateSaved (clicked_id) {
-                document.getElementById(clicked_id).src = "./assets/imgs/heart-nofill.png";
-                
-                var key = document.getElementById(clicked_id).parentElement.parentElement.id;
-                document.getElementById(key).outerHTML = '';
-
-                delete savedArray[key];
-                localStorage.setItem("saved", JSON.stringify(savedArray));
-            };
-
-
-            //localStorage.clear();
-            //console.log(localStorage.saved);
-
             var savedArray = JSON.parse(localStorage.saved);
             console.log(savedArray);
 
@@ -87,11 +73,57 @@
                 var markup = document.createElement("div");
                 markup.innerHTML = box;
                 markup.className = "itemBox";
-                markup.id = `itemBox{index}`
+                markup.id = 'itemBox'+index;
 
                 console.log(markup);
                 document.getElementById("templatedResult").appendChild(markup);
+                index++;
             }
+
+            function updateSaved (clicked_id) {
+                document.getElementById(clicked_id).src = "./assets/imgs/heart-nofill.png";
+                
+                var key = document.getElementById(clicked_id).parentElement.parentElement.id;
+                document.getElementById(key).outerHTML = '';
+
+                delete savedArray[key];
+                localStorage.setItem("saved", JSON.stringify(savedArray));
+            };
+
+            function analyze() {
+                var allResults = document.getElementsByClassName('itemBox');
+
+                var array = [];
+                
+                for(var i = 0; i < allResults.length; i++) {
+
+                    var price = allResults[i].innerHTML.match(new RegExp("itemPrice\">" + "(.*)" + "</p>"))[1];
+                    var rating = allResults[i].innerHTML.match(new RegExp("ratingScore\">" + "(.*)" + "</p>"))[1];
+                    price = parseFloat(price.replace(/\$|,/g, ''));
+                    
+                    var algorithm = ((0 - price)*100 + (rating*100))/2;
+                    array.push({parent:allResults[i], score:algorithm});
+
+                }
+
+                console.log(array);
+
+                array.sort(function (b1, b2) {
+
+                    // Sort by price
+                    // If the first item has a higher number, move it up
+                    // If the first item has a lower number, move it down
+                    if (b1.score > b2.score) return -1;
+                    if (b1.score <= b2.score) return 1;
+
+                });
+
+                console.log(array[0].parent.id);
+
+                document.getElementById(array[0].parent.id).style.border = '5px solid orange';
+            }
+
+
 
         </script>
 

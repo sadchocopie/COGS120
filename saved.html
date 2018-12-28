@@ -26,24 +26,27 @@
                 <a href="./saved.html"><img src="./assets/imgs/wishlist.jpg" id="heart"></a>
             </nav>
             <div class="sortRect">
-                <p class="Sort-By">Sort By</p>
+                <div class="sortBar">
+                    <span class="Sort-By">Sort By</span>
 
-                <select class="sortMenu" id="sortingMenuId">
-                    <option value="Price-lowToHigh">Price: low to high</option>
-                    <option value="Price-highToLow">Price: high to low</option>
-                    <option value="Rating-lowToHigh">Rating: low to high</option>
-                    <option value="Rating-highToLow">Rating: high to low</option>
-                </select>
+                    <select class="sortMenu" id="sortingMenuId">
+                        <option value="Price-lowToHigh">Price: low to high</option>
+                        <option value="Price-highToLow">Price: high to low</option>
+                        <option value="Rating-lowToHigh">Rating: low to high</option>
+                        <option value="Rating-highToLow">Rating: high to low</option>
+                    </select>
+                </div>
             </div>
         </header>
         <main>
             <div class="pageHeader">
                 <button type ="button" id="backExplore" onclick="history.back(-1)"><u>Back to Explore</u></button>
                 <button type="button" id="savedText">Saved</button>
-
+                <div class="buttonPanel">
                 <button type="button" id="analyzeText" onclick="analyze()">Analyze</button>
                 <button onclick="clearListWarning()" id="clearList">Clear list</button>
                 <br>
+                </div>
             </div>
 
             <div id="myModal" class="modal">
@@ -59,11 +62,11 @@
             </div>
 
             <p id="noItemsText" style="position: absolute; top: 50%; left: 35%; font-family: Helvetica;
-    font-size: 36px;
-    font-weight: bold;
-    z-index: 1;
-    color: black;
-    background: pink ">No items currently saved.</p>
+                                       font-size: 36px;
+                                       font-weight: bold;
+                                       z-index: 1;
+                                       color: black;
+                                       background: pink ">No items currently saved.</p>
 
 
             <div class="grid" id="templatedResult"></div>

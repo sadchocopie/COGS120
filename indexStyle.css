@@ -46,6 +46,7 @@ html {
 
 input, select, textarea {
     font-size: 35px;
+    background: white;
 }
 
 .Find-Prompt {

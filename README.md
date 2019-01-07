@@ -3,7 +3,9 @@
 This is a web app project designed and implemented for Cogs120: Design Interaction, Fall 2019 at UCSD.
 </br>
 <p align="center">
+  <a href="https://sadchocopie.github.io/COGS120/">
   <img width="680"  src="https://github.com/sadchocopie/COGS120/blob/master/assets/imgs/homepage.png">
+    </a>
 </p>
 </br>
 
@@ -37,4 +39,11 @@ By going to the user's "saved" list, the user can see what item they have liked,
   <img width="680"  src="https://github.com/sadchocopie/COGS120/blob/master/assets/imgs/analysis.png">
 </p>
 </br>
-<h2>Demo</h2>
+<h2><a href="https://drive.google.com/a/ucsd.edu/file/d/15I5KHtxllBcPoD2M9Gc6WQiyP97tdE5A/view?usp=sharing">Demo</></h2>
+ </br>
+<p align="center">
+  <a href="https://drive.google.com/a/ucsd.edu/file/d/15I5KHtxllBcPoD2M9Gc6WQiyP97tdE5A/view?usp=sharing">
+  <img width="680"  src="https://github.com/sadchocopie/COGS120/blob/master/assets/imgs/homepage.png">
+    </a>
+</p>
+</br>
